@@ -1,0 +1,40 @@
+.tabela {
+    border-collapse: collapse;
+    margin-left: 50px;
+    /*margin: 25px 0;*/
+    font-size: 0.9em;
+    width: 90%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background-color: blanchedalmond;
+    color: rgb(102, 14, 36);
+  }
+  
+  .tabela thead tr th {
+    background-color: #991632;
+    color: blanchedalmond;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .tabela th,
+  .tabela td {
+    padding: 12px 15px;
+  }
+  
+  .tabela tbody tr {
+    border-bottom: 1px solid rgb(219, 203, 179);
+  }
+  
+  .tabela tbody tr:last-of-type {
+    border-bottom: 2px solid #991632;
+  }
+  
+  .grupos{
+    margin-left: 80px;
+    background-color: blanchedalmond;
+  }
+.cel1{
+  color: blanchedalmond;
+}

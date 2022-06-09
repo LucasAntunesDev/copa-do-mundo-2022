@@ -1,0 +1,36 @@
+.partidas {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+  }
+  
+  .partidas thead tr th {
+    background-color: #991632;
+    /*color: #ffffff;*/
+    color: rgb(102, 14, 36);
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .partidas th,
+  .partidas td {
+    padding: 12px 15px;
+  }
+  
+
+  
+  .partidas tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+  }
+  
+  .cel1{
+    background-color: #991632;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    table-layout: fixed;
+  }
