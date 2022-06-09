@@ -13,6 +13,9 @@ a:visited {
   } 
 
   a:link {
+    color:rgb(36, 138, 138);
+  }
+  a:link{
     text-decoration: none;
   }
   
