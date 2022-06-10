@@ -1,8 +1,17 @@
 *{
     background-image: url("Imgs/Background.png");
-    color: blanchedalmond;
+    color: blanchedalmond
     text-align: center;
 }
 .grupos{
     margin-left: 50px;
+}
+h1{
+color: blanchedalmond;
+}
+p{
+    color: blanchedalmond;
+}
+i{
+    color: blanchedalmond;
 }
