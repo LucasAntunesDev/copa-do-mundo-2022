@@ -1,17 +1,35 @@
 *{
-    background-image: url("Imgs/Background.png");
-    color: blanchedalmond
-    text-align: center;
+    
+
+    color: blanchedalmond;
 }
 .grupos{
     margin-left: 50px;
 }
 h1{
 color: blanchedalmond;
+
 }
 p{
     color: blanchedalmond;
 }
 i{
     color: blanchedalmond;
+}
+table{
+    margin: auto;
+}
+
+img{
+    text-align: center;
+}
+
+body{
+    background-color: #5e0f25;
+    background-image: url(Imgs/Background.svg);
+    background-size: cover;
+}
+
+div .grupos{
+    margin: auto;
 }

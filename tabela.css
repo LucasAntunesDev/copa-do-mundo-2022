@@ -1,7 +1,7 @@
 .tabela {
     border-collapse: collapse;
-    margin-left: 50px;
-    /*margin: 25px 0;*/
+    /*margin-left: 50px;
+    margin: 25px 0;*/
     font-size: 0.9em;
     width: 90%;
     border-radius: 5px 5px 0 0;
@@ -9,10 +9,12 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     background-color: blanchedalmond;
     color: rgb(102, 14, 36);
+    margin:auto;
+
   }
   
   .tabela thead tr th {
-    background-color: #991632;
+    background-color: #00b2a1;
     color: blanchedalmond;
     text-align: center;
     font-weight: bold;
@@ -28,7 +30,7 @@
   }
   
   .tabela tbody tr:last-of-type {
-    border-bottom: 2px solid #991632;
+    border-bottom: 2px solid #00b2a1;
   }
   
   .grupos{

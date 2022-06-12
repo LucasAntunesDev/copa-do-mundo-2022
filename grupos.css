@@ -1,9 +1,14 @@
 body{
-/*color: rgb(58, 4, 17);*/
-/*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
-text-decoration-line: none;
-text-align: center;
-background-image: url("Imgs/Background.png");
-color: blanchedalmond;
+    background-color: #5e0f25;
+    background-image: url(imgs/Background.svg);
+    background-size:contain;
+    text-decoration-line: none;
+    background-size: cover;
+    text-align: center;
+    color: blanchedalmond;
 }
 
+table{
+    margin: auto;
+    width: 40%;
+}
