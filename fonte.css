@@ -1,16 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/qatar2022-arabic');
 *{
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Qatar2022 Arabic', sans-serif;
     text-align: center;
-    font-style: italic;
-    font-weight: bold ;
+    font-weight: normal ;
 }
-h1{
-    font-weight: bold;
+/*h1{
+    font-weight: 800;
 }
 h2{
     font-weight: bold;
-}
-i{
-    font-weight: bold;
-}
+}*/

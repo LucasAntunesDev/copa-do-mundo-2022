@@ -14,4 +14,13 @@ table{
 }
 
 
+.nome-grupo{
+    background-color: #00b2a1;
+    border-left: 10px;
+    margin-left: 550px;
+    margin-right: 550px;
+    border-top-left-radius: 30px ;
+    border-bottom-right-radius: 30px ;
+}
+
 
