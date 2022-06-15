@@ -4,18 +4,27 @@
     margin: 25px 0;*/
     font-size: 0.9em;
     width: 90%;
-    border-radius: 5px 5px 0 0;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    background-color: blanchedalmond;
-    color: rgb(102, 14, 36);
+    /*background-color: #550d1c;*/
+    color: whitesmoke;
     margin:auto;
 
   }
   
+  tr:nth-child(2n-1) {
+    background-color: #550d1c;
+  }
+
+  tr:nth-child(2n){
+    background-color: #440915 ;
+  }
+
   .tabela thead tr th {
     background-color: #00b2a1;
-    color: blanchedalmond;
+    color: whitesmoke;
     text-align: center;
     font-weight: bold;
   }
@@ -26,7 +35,7 @@
   }
   
   .tabela tbody tr {
-    border-bottom: 1px solid rgb(219, 203, 179);
+    border: 1px solid #550d1c;
   }
   
   .tabela tbody tr:last-of-type {
@@ -35,8 +44,12 @@
   
   .grupos{
     margin-left: 80px;
-    background-color: blanchedalmond;
+    background-color: whitesmoke;
   }
 .cel1{
-  color: blanchedalmond;
+  color: whitesmoke;
+}
+
+td:nth-child(even){
+  background-color: rgba(0, 0, 0, 0.060);
 }

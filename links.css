@@ -1,15 +1,15 @@
 a:visited {
     /*color: #991632;*/
-    color: blanchedalmond;
+    color: whitesmoke;
   }
   
   a:hover {
     /*color: #c53f5c;*/
-    color: rgb(211, 193, 166);
+    color: rgb(218, 218, 218);
   }
   
   a:active {
-    color: rgb(211, 193, 166);
+    color: #ff0057;
   } 
 
   a:link {
