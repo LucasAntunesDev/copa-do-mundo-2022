@@ -1,20 +1,28 @@
 *{
-    
+     margin:0; padding:0; 
 
-    color: blanchedalmond;
+    color: whitesmoke;
 }
+
+@import url('http://fonts.cdnfonts.com/css/qatar2022-arabic');
+*{
+    font-family: 'Qatar2022 Arabic', sans-serif;
+    text-align: center;
+    font-weight: normal ;
+}
+
 .grupos{
     margin-left: 50px;
 }
 h1{
-color: blanchedalmond;
+color: whitesmoke;
 
 }
 p{
-    color: blanchedalmond;
+    color: whitesmoke;
 }
 i{
-    color: blanchedalmond;
+    color: whitesmoke;
 }
 table{
     margin: auto;
@@ -33,3 +41,26 @@ body{
 div .grupos{
     margin: auto;
 }
+
+.nome-grupos{
+    
+    background-color: #00b2a1;
+    background-image: linear-gradient(to bottom right, #00b2a1,);
+    border-top-left-radius: 30px ;
+    border-bottom-right-radius: 30px ;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 200px;
+    max-height: 60px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.group{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
