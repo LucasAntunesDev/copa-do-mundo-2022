@@ -257,10 +257,6 @@ div>tabela{
     margin-bottom: 30px;
   }
 
-  .img-time{
-    justify-content: space-between !important;
-  }
-  
   /*tr:nth-child(2n-1) {
     background-color: #550d1c;
   }
