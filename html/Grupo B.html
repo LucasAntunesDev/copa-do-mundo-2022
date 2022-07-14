@@ -11,7 +11,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
     <header class="navbar navbar-expand-lg navbar-dark bd-navbar sticky-top">
         <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation">
@@ -234,11 +234,15 @@
         <h1 class="partidas">Partidas</h1>
     </div>
     
-    <div class="centralizar">
-        <img src="../Imgs/Rodadas.png"  width="350px" alt="">
-        <h1 class="rodadas">1ª Rodada</h1>
-    </div>
-
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="centralizar">
+                <img src="../Imgs/Rodadas.png"  width="350px" alt="">
+                <h1 class="rodadas">1ª Rodada</h1>
+            </div>
+            <br>
+          
             <table class="tabela" >
                 <thead>
                     <tr class="cel1">
@@ -271,85 +275,98 @@
                             </tr>
                 </thead>
             </table>
-        
+          </div>
+          <div class="carousel-item">
             <div class="centralizar">
                 <img src="../Imgs/Rodadas.png"  width="350px" alt="">
                 <h1 class="rodadas">2ª Rodada</h1>
             </div>
-
+            <br>
             <table class="tabela">
-                    <thead>
-                        <tr class="cel1">
-                        <th colspan="2">SEX 25/11/22 &nbsp;07:00h - Estádio Ahmed bin Ali</th>
-                    </tr>
-                         </thead>
-                        <tbody>
-                            <tr>
-                                 <td>
-                                    <img src="../Imgs/Grupo B/Gales.png" alt="País de Gales" height="60px" 
-                                    title="País de Gales"><br><b>País de Gales</b>
-                                </td>
-                                <td>
-                                    <img src="../Imgs/Grupo B/Ira.png" alt="Irã" height="60px" 
-                                    title="Irã"><br><b>Irã</b>
-                                </td>
+                <thead>
+                    <tr class="cel1">
+                    <th colspan="2">SEX 25/11/22 &nbsp;07:00h - Estádio Ahmed bin Ali</th>
+                </tr>
+                     </thead>
+                    <tbody>
+                        <tr>
+                             <td>
+                                <img src="../Imgs/Grupo B/Gales.png" alt="País de Gales" height="60px" 
+                                title="País de Gales"><br><b>País de Gales</b>
+                            </td>
+                            <td>
+                                <img src="../Imgs/Grupo B/Ira.png" alt="Irã" height="60px" 
+                                title="Irã"><br><b>Irã</b>
+                            </td>
+                        </tr>
+                        <thead>
+                            <tr class="cel1">
+                                <th colspan="2">SEX 25/11/22 &nbsp;16:00h - Estádio Al Bayt</th>
                             </tr>
-                            <thead>
-                                <tr class="cel1">
-                                    <th colspan="2">SEX 25/11/22 &nbsp;16:00h - Estádio Al Bayt</th>
-                                </tr>
-                            </thead>
-                             <tr>
-                                <td>
-                                    <img src="../Imgs/Grupo B/Inglaterra.png" alt="Inglaterra" height="60px" 
-                                    title="Inglaterra"><br><b>Inglaterra</b>
-                                </td>
-                                <td>
-                                    <img src="../Imgs/Grupo B/EUA.png" alt="Estados Unidos" height="60px" 
-                                    title="Estados Unidos"><br><b>Estados Unidos</b>
-                                </td>
-                            </tr>
-                    </thead>
-            </table>
-        
+                        </thead>
+                         <tr>
+                            <td>
+                                <img src="../Imgs/Grupo B/Inglaterra.png" alt="Inglaterra" height="60px" 
+                                title="Inglaterra"><br><b>Inglaterra</b>
+                            </td>
+                            <td>
+                                <img src="../Imgs/Grupo B/EUA.png" alt="Estados Unidos" height="60px" 
+                                title="Estados Unidos"><br><b>Estados Unidos</b>
+                            </td>
+                        </tr>
+                </thead>
+        </table>
+          </div>
+          <div class="carousel-item">
             <div class="centralizar">
                 <img src="../Imgs/Rodadas.png"  width="350px" alt="">
                 <h1 class="rodadas">3ª Rodada</h1>
             </div>
-
-    <table  class="tabela" >
-        <thead>
-            <tr class="cel1">
-                <th colspan="2">TER 29/11/22 &nbsp;16:00h - Estádio Ahmed bin Ali</th>
-            </tr>
+            <br>
+            <table  class="tabela" >
+                <thead>
+                    <tr class="cel1">
+                        <th colspan="2">TER 29/11/22 &nbsp;16:00h - Estádio Ahmed bin Ali</th>
+                    </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="../Imgs/Grupo B/Gales.png" alt="País de Gales" height="60px" 
+                                    title="País de Gales"><br><b>País de Gales</b>
+                                </td>
+                                <td>
+                                    <img src="../Imgs/Grupo B/Inglaterra.png" alt="Inglaterra" height="60px" 
+                                    title="Inglaterra"><br><b>Inglaterra</b>
+                                </td>
+                            </tr>
+                            <thead>
+                                <tr class="cel1">
+                                <th colspan="2">TER 29/11/22 &nbsp;16:00h - Estádio Al Thumama</th>
+                            </tr>
+                            </thead>
+                            <tr>
+                                <td>
+                                    <img src="../Imgs/Grupo B/Ira.png" alt="Irã" height="60px" 
+                                    title="Irã"><br><b>Irã</b>
+                                </td>
+                                <td>
+                                    <img src="../Imgs/Grupo B/EUA.png" alt="Estados Unidos" height="55px" 
+                                    title="Estados Unidos"><br><b>Estados Unidos</b>
+                                </td>
+                            </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <img src="../Imgs/Grupo B/Gales.png" alt="País de Gales" height="60px" 
-                            title="País de Gales"><br><b>País de Gales</b>
-                        </td>
-                        <td>
-                            <img src="../Imgs/Grupo B/Inglaterra.png" alt="Inglaterra" height="60px" 
-                            title="Inglaterra"><br><b>Inglaterra</b>
-                        </td>
-                    </tr>
-                    <thead>
-                        <tr class="cel1">
-                        <th colspan="2">TER 29/11/22 &nbsp;16:00h - Estádio Al Thumama</th>
-                    </tr>
-                    </thead>
-                    <tr>
-                        <td>
-                            <img src="../Imgs/Grupo B/Ira.png" alt="Irã" height="60px" 
-                            title="Irã"><br><b>Irã</b>
-                        </td>
-                        <td>
-                            <img src="../Imgs/Grupo B/EUA.png" alt="Estados Unidos" height="55px" 
-                            title="Estados Unidos"><br><b>Estados Unidos</b>
-                        </td>
-                    </tr>
-        </thead>
-    </table>
+            </table>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 </body>
 </html>

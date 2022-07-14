@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css" integrity="sha512-YzwGgFdO1NQw1CZkPoGyRkEnUTxPSbGWXvGiXrWk8IeSqdyci0dEDYdLLjMxq1zCoU0QBa4kHAFiRhUL3z2bow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
     <header class="navbar navbar-expand-lg navbar-dark bd-navbar sticky-top">
         <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation">
@@ -204,16 +206,20 @@
         <h1 class="partidas">Partidas</h1>
     </div>
     
-    <div class="centralizar">
-        <img src="../Imgs/Rodadas.png"  width="350px" alt="">
-        <h1 class="rodadas">1ª Rodada</h1>
-    </div>
-      
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="centralizar">
+                <img src="../Imgs/Rodadas.png"  width="350px" alt="">
+                <h1 class="rodadas">1ª Rodada</h1>
+            </div>
+            <br>
+          
             <table class="tabela" >
                 <thead>
                     <tr>
                         <td colspan="2" class="cel1">
-                            SEG 21/11/22 05:00h -Estádio Al Janoub</td>
+                            SEG 21/11/22 &nbsp;05:00h -Estádio Al Janoub</td>
                     </tr>
                         </thead>
                         <tbody>
@@ -229,7 +235,7 @@
                             </tr>
                             <tr>
                                 <td colspan="2" class="cel1">
-                                    SEG 21/11/22 13:00h - Estádio Nacional de Lusail</td>
+                                    SEG 21/11/22 &nbsp;13:00h - Estádio Nacional de Lusail</td>
                             </tr>
                             <tr>
                                 <td>
@@ -243,17 +249,18 @@
                             </tr>
                 </thead>
             </table>
-        
+          </div>
+          <div class="carousel-item">
             <div class="centralizar">
                 <img src="../Imgs/Rodadas.png"  width="350px" alt="">
                 <h1 class="rodadas">2ª Rodada</h1>
             </div>
-
+            <br>
             <table class="tabela" >
                 <thead>
                     <tr>
                         <td colspan="2" class="cel1">
-                            SEX 25/11/22 10:00h - Estádio Al Janoub</td>
+                            SEX 25/11/22 &nbsp;10:00h - Estádio Al Janoub</td>
                     </tr>
                         </thead>
                         <tbody>
@@ -269,7 +276,7 @@
                             </tr>
                             <tr>
                                 <td colspan="2" class="cel1">
-                                    SEX 25/11/22 13:00h - Estádio 974</td>
+                                    SEX 25/11/22 &nbsp;13:00h - Estádio 974</td>
                             </tr>
                             <tr>
                                 <td>
@@ -283,45 +290,58 @@
                             </tr>
                 </thead>
             </table>
-        
+          </div>
+          <div class="carousel-item">
             <div class="centralizar">
                 <img src="../Imgs/Rodadas.png"  width="350px" alt="">
                 <h1 class="rodadas">3ª Rodada</h1>
             </div>
-
-            <table class="tabela">
-                <thead>
-                    <tr>
-                        <td colspan="2" class="cel1">
-                            TER 02/12/22 16:00h - Estádio Nacional de Lusail</td>
-                    </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <img src="../Imgs/Grupo G/Camaroes.png" alt="Camarões" height="60px" 
-                                    title="Camarões"><br><b>Camarões</b>
-                                </td>
-                                <td>
-                                    <img src="../Imgs/Grupo G/Brasil.png" alt="Brasil" height="60px" 
-                                    title="Brasil"><br><b>Brasil</b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" class="cel1">
-                                    TER 02/12/22 16:00h - Estádio 974</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="../Imgs/Grupo G/Servia.png" alt="Sérvia" height="60px" 
-                                    title="Sérvia"><br><b>Sérvia</b>
-                                </td>
-                                <td>
-                                    <img src="../Imgs/Grupo G/Suica.png" alt="Suiça" height="60x" 
-                                    title="Suiça"><br><b>Suiça</b>
-                                </td>
-                            </tr>
-                </thead>
-            </table>
+            <br>
+                        <table class="tabela">
+                            <thead>
+                                <tr>
+                                    <td colspan="2" class="cel1">
+                                        TER 02/12/22 &nbsp;16:00h - Estádio Nacional de Lusail</td>
+                                </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <img src="../Imgs/Grupo G/Camaroes.png" alt="Camarões" height="60px" 
+                                                title="Camarões"><br><b>Camarões</b>
+                                            </td>
+                                            <td>
+                                                <img src="../Imgs/Grupo G/Brasil.png" alt="Brasil" height="60px" 
+                                                title="Brasil"><br><b>Brasil</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="cel1">
+                                                TER 02/12/22 &nbsp;16:00h - Estádio 974</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="../Imgs/Grupo G/Servia.png" alt="Sérvia" height="60px" 
+                                                title="Sérvia"><br><b>Sérvia</b>
+                                            </td>
+                                            <td>
+                                                <img src="../Imgs/Grupo G/Suica.png" alt="Suiça" height="60x" 
+                                                title="Suiça"><br><b>Suiça</b>
+                                            </td>
+                                        </tr>
+                            </thead>
+                        </table>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+            
 </body>
 </html>
