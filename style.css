@@ -485,3 +485,8 @@ div{
 .carousel-item{
   justify-content: space-around !important;
 }
+
+
+img:hover {
+  opacity: 0.7;
+}
