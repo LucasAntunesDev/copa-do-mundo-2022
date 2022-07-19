@@ -99,7 +99,10 @@ margin-left: 0px;
     font-size: 20px;
     background-color: #711f8e;
     background-image: linear-gradient(to bottom right, #2b0848, #711f8e);
-    border-radius: 15px ;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 30px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     
 }
@@ -246,13 +249,18 @@ div>tabela{
     font-size: 0.9em;
     max-width: 100vh;
     min-width: 50vh;
-    border-radius: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 30px;
     /*border-bottom-right-radius: 10px;*/
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    background-color: #550d1c;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+    /* background-color: #550d1c; */
+    /* background-color: whitesmoke; */
     background-image: linear-gradient(#550d1c,#2b070e);
-    color: whitesmoke;
+    /* background-image: linear-gradient(beige, blanchedalmond); */
+    color: /*#550d1c*/ whitesmoke;
     margin:auto;
     margin-bottom: 30px;
   }
@@ -266,8 +274,11 @@ div>tabela{
   }*/
 
   .tabela thead tr th {
-    background-color: #ff0057;
-    background-image: linear-gradient(#ff0057,#ad003a);
+    /* background-color: #ff0057; */
+    /* background-image: linear-gradient(#ff0057,#ad003a); */
+    background-image: linear-gradient(#00b2a1,#0c8f82);
+    /* color: #00b2a1;
+    color: #0c8f82; */
     color: whitesmoke;
     text-align: center;
     font-weight: bold;
@@ -278,74 +289,21 @@ div>tabela{
     padding: 12px 15px;
   }
   
-  .tabela tbody tr {
-    border-bottom: 2px solid rgb(66, 9, 24);
 
-  }
-  
-  .tabela tbody tr:last-of-type {
-    border-bottom: 2px solid #ff0057;
+  .tabela>td:hover{
+    background-color: antiquewhite;
   }
   
   .grupos{
     margin-left: 80px;
     background-color: whitesmoke;
   }
-.cel1{
-  color: whitesmoke;
-  background-image: linear-gradient(#ff0057,#ad003a);
-}
 
-/*td:nth-child(even){
-  background-color: rgba(0, 0, 0, 0.060);
-}*/
-
-
-
-/*.tabela thead tr th:last-child {
-  background-color: #ff0057;
-  color: whitesmoke;
-  text-align: center;
-  font-weight: bold;
-}*/
-
-
-
-
-/*.partidas thead tr th:last-child {
-  background-color: #ff0057;
-  color: whitesmoke;
-  text-align: center;
-  font-weight: bold;
-  justify-content: center;
-  align-items: column;
-  display: flex;
-}
-
-
-  .partidas thead tr th {
-    background-color: #991632;
-
-    color: rgb(102, 14, 36);
-    text-align: center;
-    font-weight: bold;
-  }
-  
-  .partidas th,
-  .partidas td {
-    padding: 12px 15px;
-  }
-
-
-  
-  .partidas tbody tr.active-row {
-    font-weight: bold;
-    color: #ff0057  */
-  
-  
   .cel1{
-    background-color: #ff0057;
-    color: #ffffff;
+    background-image: linear-gradient(#00b2a1,#0c8f82);
+    color: whitesmoke;
+    /* border-bottom-righr-radius: 100% !important;
+    border-bottom-righr-radius: 100%x !important; */
     text-align: center;
     font-weight: bold;
     table-layout: fixed;
@@ -354,23 +312,33 @@ div>tabela{
 
 
 /*LINKS*/
+a:link {
+  color:whitesmoke;
+}
+
 a{
-  color:#e4ad04
+  color:#e4ad04;
+}
+
+li>a:hover{
+  color:#e4ad04;
 }
 
 a:visited {
     /*color: #991632;*/
-    color:#e4ad04;
+    color:whitesmoke;
   }
 
-  a:hover {
-    /*color: #c53f5c;*/
-    color: rgb(180, 180, 180);
-  }
-  
   a:active {
     color: #ff0057;
   } 
+
+  a:hover {
+    /*color: #c53f5c;*/
+    color: #e4ad04 /*rgb(180, 180, 180)*/;
+  }
+  
+  
 
   a:link {
     color:whitesmoke;
@@ -381,6 +349,14 @@ a:visited {
   
   a:visited {
     text-decoration: none;
+  }
+
+  .dp-menu ul li a{
+    color: white;
+  }
+
+  .dp-menu ul li a:hover {
+    color: #e4ad04;
   }
 
   .bd-navbar {
@@ -432,7 +408,10 @@ a:visited {
   padding: 10px ;
   background-color: #711f8e;
   background-image: linear-gradient(to bottom right, #2b0848, #711f8e);
-  border-radius: 10px;
+  border-top-right-radius: 15px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 30px;
   width: 400px;
   display: flex;
   margin-left: 100px;
@@ -488,3 +467,8 @@ a:visited {
 .carousel-item{
   justify-content: space-around !important;
 }
+
+.logo-head:hover{
+  opacity: 0.6;
+}
+

@@ -35,13 +35,21 @@ h2{
 /*HEAD*/
 
 
+.nav-link{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+
+}
 
 .dp-menu ul{
     list-style-type: none;
-    padding: 10px;
-    text-align: left;
+    text-align: center;
    margin-left: 5vh;
    padding-left: 50px;
+   vertical-align: center;
+   vertical-align: -3px;
+
 }
 
 .dp-menu ul li {
@@ -49,13 +57,13 @@ h2{
 }
 
 .dp-menu ul li a{
-    color: #e4ad04;
+    color: whitesmoke;
     text-decoration: none;
     padding: 15px;
 }
 
 .dp-menu ul li a:hover{
-    color: #a88008;
+  color:#e4ad04;
 }
 
 .dp-menu{
@@ -342,15 +350,18 @@ hr { border:0; height: 10px;
 /*LINKS*/
 a:visited {
     /*color: #991632;*/
-    color:#e4ad04;
+    color:whitesmoke;
+    /* color: whitesmoke; */
   }
   
 .bi{
-  color: #e4ad04;
+  color: whitesmoke;
+  /* color: whitesmoke; */
 }
 
 .bi:hover{
-  color: #a88008;
+  /* color: #a88008; */
+  color:#e4ad04;;
 }
 
   a:hover {
@@ -404,8 +415,8 @@ a:visited {
 }
 
 #end{
-  margin-left: 55vh;
-  justify-content: end;
+  /* margin-left: 55vh; */
+  justify-content: flex-end !important;
 }
 
 header{
@@ -416,10 +427,10 @@ header{
   display: flex;
   flex-grow: 2;
 }
-
+/* 
 div{
   justify-content: space-between;
-}
+} */
 
 .bi .bi-chevron-left:hover{
   margin-right:30px ;
@@ -441,10 +452,19 @@ div{
  /* display: flex;
   flex-direction: row ;
   justify-content: start;*/
-  margin-left: 75vh;
-
+  /* margin-left: 75vh; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  flex-grow: 4 !important;
+  
+  
   }
   
+.logo-head:hover{
+  opacity: 0.6;
+}
 
 .bi-chevron-left:hover{
   color: #a88008;
@@ -478,16 +498,46 @@ div{
   border-radius: 100vw;
 }
 
-#cont{
+/* #cont{
   justify-content: space-around !important;
-}
+} */
 
 .carousel-item{
   justify-content: space-around !important;
 }
 
 
-img:hover {
+.hover:hover {
   opacity: 0.7;
   /*height:55vh*/
+}
+
+#demo{
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 30px;
+}
+.nav-item{
+  justify-content: space-around;
+}
+
+.offcanvas-lg .offcanvas-body {
+  display: flex;
+  flex-grow: 0;
+  padding: 0;
+  overflow-y: visible;
+  justify-content: space-around;
+}
+
+.container-xxl {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-estadio{
+  background-color: #0c8f8285;
+  padding: 100px;
 }
