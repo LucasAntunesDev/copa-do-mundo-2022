@@ -1,0 +1,412 @@
+/*FONTS*/
+@import url('http://fonts.cdnfonts.com/css/qatar2022-arabic');
+*{
+    font-family: 'Qatar2022 Arabic', sans-serif;
+    text-align: center;
+    font-weight: normal ;
+    box-sizing: border-box;
+    list-style: none;
+    
+}
+
+:root{
+  --rosa: #ff0057;
+  --amarelo: #e4ad04;
+  --roxo: #711f8e;
+  --roxo2: #2b0848;
+  --verde: #00b2a1;
+  --verdeForte: #009879;
+  --verdeForte2: #0c8f82;
+  --preto: #212529;
+  --qatar: #640619 ;
+  --qatarClaro: #7a042c ;
+  --qatarEscuro: #2b070e ;
+  --offWhite: blanchedalmond;
+}
+/* CABEÇALHO */
+
+
+
+/*BODY*/
+body{
+    background-color: var(--offWhite);
+    background-image: url(../Imgs/BackgroundDark.svg);
+    background-size:cover;
+    text-decoration-line: none;
+   /* background-size: 100%;*/
+    padding: 0;
+    margin: 0;
+    color: var(--offWhite) !important;
+}
+
+table{
+    
+  margin: 0px 50vh;
+  width: 50px;
+  color: var(--offWhite);
+
+}
+
+.table .table-dark{
+  border-radius: 20px !important;
+}
+
+.table-dark:nth-child(even){
+  background-color: black !important;
+}
+.partidas{
+  display: flex;
+  position: absolute;
+  z-index:3;
+  cursor:default;
+  padding-top: 5px;
+  padding-left: 20px;
+
+}
+
+.nome-grupo{
+  display: flex;
+  position: absolute;
+  z-index:3;
+  cursor:default;
+  padding-top: 5px;
+  padding-left: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: var(--offWhite);
+}
+
+
+.partidas{
+    
+  color: var(--offWhite);
+  display: flex;
+  position: absolute;
+  z-index:3;
+  cursor:default;
+  padding-top: 5px;
+  padding-left: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.rodadas{
+  
+  display: flex;
+  position: absolute;
+  z-index:3;
+  cursor:default;
+  padding-top: 10px;
+  padding-left: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: var(--offWhite);
+  font-size: 35px;
+
+}
+
+
+h1{
+  height: 20px;
+}
+
+
+.centralizar{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+#none{
+  margin:0;
+  padding: 0;
+}
+
+
+
+.head{
+    margin: 10px;
+    margin-top: 15px;
+}
+
+hr{
+    border: solid 4px ;
+}
+
+
+hr { border:0; height: 10px;
+    background-image: radial-gradient(
+        var(--verde), var(--verdeForte2) 40%, transparent 60%);
+}
+
+.container{
+    
+    align-items: center;
+    display: flex; 
+    justify-content: center;
+    flex-direction: row;
+    width: 50vh;
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+}
+
+table{
+  border-collapse: separate;
+}
+
+div>tabela{
+  display: block !important;
+}
+
+  .grupos{
+    margin-left: 80px;
+    background-color: var(--offWhite);
+  }
+
+/*LINKS*/
+a:link {
+  color:var(--offWhite);
+}
+
+a{
+  color: var(--amarelo);
+}
+
+li>a:hover{
+  color:var(--amarelo);
+}
+
+a:visited {
+    /*color: #991632;*/
+    color:var(--offWhite);
+  }
+
+  a:active {
+    color: var(--rosa);
+  } 
+
+  a:hover {
+    color: var(--amarelo) 
+  }
+  
+  
+
+  a:link {
+    color:var(--offWhite);
+  }
+  a:link{
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+
+  .dp-menu ul li a{
+    color: var(--offWhite);
+  }
+
+  .dp-menu ul li a:hover {
+    color: var(--amarelo);
+  }
+
+  .bd-navbar {
+    background-color: var(--roxo);
+    background-image: linear-gradient(to bottom right, var(--roxo2), var(--roxo));
+    /*background-image: linear-gradient(#550d1c,#2b070e);*/
+    box-shadow: rgb(0 0 0 / 15%) 0px 0.5rem 1rem, rgb(0 0 0 / 15%) 0px -1px 0px inset;
+}
+
+/*.bi .bi-chevron-right{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}*/
+
+
+.grps{
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-between;
+}
+
+.hr{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#end{
+  margin-left: 55vh;
+}
+
+#teste{
+  display: flex;
+  flex-grow: 2;
+}
+
+.bi-chevron-right:hover{
+  color: var(--amarelo);
+}
+
+.bi-chevron-left:hover{
+  color: var(--amarelo);
+}
+
+.bi-chevron-left:hover{
+  color: rgb(180, 180, 180);
+}
+
+#demo{
+  color: var(--offWhite);
+  font-size: 50px;
+}
+
+#texto-demo{
+  color: var(--offWhite);
+  font-size: 50px;
+}
+
+::-webkit-scrollbar{
+  width: 15px;
+}
+
+::-webkit-scrollbar-track{
+  background-image: linear-gradient(var(--qatarEscuro), var(--qatar));
+}
+
+::-webkit-scrollbar-thumb{
+ /* background:#ff0057;*/
+ background-image: linear-gradient(var(--rosa), var(--qatar));
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:rgb(192, 15, 74);
+  border-radius: 100vw;
+}
+
+
+#cont{
+  justify-content:center;
+  font-size: 40px;
+  margin-top: 20px;
+  background-image: url(imgs/Grupos2.png);
+}
+
+.carousel-item{
+  justify-content: space-around !important;
+}
+
+/* Mobile */
+/* @media only screen and (max-width: 950px) {
+}*/
+
+.lightBG{
+  background-image: url(../Imgs/BackgroundLight.svg);
+  background-color: var(--offWhite);
+  color: var(--qatar) !important;
+}
+
+.darkBG{
+  background-image: url(../Imgs/BackgroundDark.svg);
+  background-color: var(--black);
+  color: var(--offWhite) !important;
+}
+
+#verus{
+  background-color: var(--amarelo);
+}
+
+#demo{
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.hover:hover{
+  opacity: 0.7;
+  scale: 1.02;
+}
+
+/* #carouselExampleFade:hover{
+  scale: 1.02;
+} */
+
+/* //TABELAS// */
+.tabela {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 120vh;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.tabela thead tr {
+  background-color: var(--verde);
+  color: var(--offWhite);
+  text-align: left;
+  font-weight: bold;
+}
+
+.tabela th,
+.tabela td {
+  padding: 12px 15px;
+  
+}
+
+.tabela tbody tr {
+  border-bottom: 1px solid var(--verde);
+}
+
+.tabela tbody{
+  background-color: #212529;
+}
+/* .tabela tbody tr:nth-of-type(even) {
+  background-color: #212529;
+}
+
+.tabela tbody tr:nth-of-type(odd) {
+  background-color: #141516;
+} */
+
+.tabela tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.tabela tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+.countdown_diamondSVGIcon__1dyM8{
+  margin: 10px 3px 0px 3px;
+}
+
+.lightBG td{
+  background-color: var(--qatarEscuro);
+  color: var(--offWhite);
+}
+
+.lightBG th{
+  background-color: var(--rosa) ;
+  color: var(--offWhite);
+}
+
+.lightBG tbody tr:last-of-type {
+  border-bottom: 2px solid var(--qatarClaro);
+}
+
+.lightBG tbody tr {
+  border-bottom: 1px solid var(--rosa);
+}

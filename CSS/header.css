@@ -1,0 +1,258 @@
+:root{
+  --rosa: #ff0057;
+  --amarelo: #e4ad04;
+  --roxo: #711f8e;
+  --roxo2: #2b0848;
+  --roxoClaro: #9734bb;
+  --verde: #00b2a1;
+  --verdeForte: #009879;
+  --verdeForte2: #0c8f82;
+  --preto: #212529;
+  --qatar: #640619 ;
+  --qatarClaro: #7a042c ;
+  --qatarEscuro: #2b070e ;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.material-symbols-rounded{
+    font-size: 5.5vh ;
+    margin-top: 2px;
+}
+
+#logo-head{
+    display: flex;
+    flex-direction: row ;
+    justify-content: start;
+    margin-left: 2px;
+    max-height: 8vh;
+    height: 6.5vh;
+  
+}
+
+#logo-head:hover{
+    opacity: 0.6;
+    scale: 1.1;
+  }
+
+.containerR{
+    /* border: solid 2px red; */
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    margin: 0px 50px !important;
+    font-size: 3vh;
+    
+}
+
+#nav-principal{
+    /* height: 3.5em; */
+    height: 9.3vh;
+    background-color: #711f8e;
+    background-image: linear-gradient(to bottom right, var(--roxo2), var(--roxo));
+    border-bottom: solid 2px var(--roxoClaro);
+    position:fixed;
+    box-shadow: #0d0118b4;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+
+#start{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+/* .head-bottom{
+    max-width: 140vh;
+    min-width: 80vh;
+} */
+
+#end{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+}
+
+#irVoltar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#botao{
+    background-color: rgba(180, 180, 180, 0);
+    border: none;
+  }
+  
+#darkMode{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+#ir{
+    margin-left: 2.5vh;
+}
+#voltar{
+    margin-right: 2.5vh;
+}
+
+#btn-head{
+    margin-right: 20px ;
+}
+
+/* DP MENU */
+.dropdown-menu{
+    display: none;
+  }
+  
+  .dropdown-menu:hover{
+    display: block;
+  }
+  
+   .material-symbols-outlined .md-48{
+    font-size: 48px; 
+   }
+  
+  
+  .dp-menu ul{
+      list-style-type: none;
+      padding: 10px;
+      text-align: left;
+     margin: auto;
+     padding-left: 50px;
+  }
+
+  
+  .dp-menu ul li {
+      display: inline-block;
+      font-size: 3vh;
+  }
+  
+  .dp-menu ul li a{
+      color: var(--amarelo);
+      text-decoration: none;
+      padding: 15px;
+  }
+  
+  .dp-menu ul li a:hover{
+      color: #a88008;
+  }
+  
+  .dp-menu{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dp-menu ul ul{
+      display: none;
+  margin-left: 0px;
+  
+  }
+  
+  #pag1{
+    margin-left: 120px;
+    margin-right: 35px;
+    align-items: center;
+    min-width: 20px;
+  }
+  
+  #pag2{
+    margin-left: 35px;
+  }
+  
+  .dp-menu ul li:hover ul{
+      display:grid;
+      position: absolute;
+      padding: 2px 10px;
+      font-size: 20px;
+      background-color: #711f8e;
+      /* background-image: linear-gradient(to bottom right, #2b0848, #711f8e); */
+      background-image: linear-gradient(to bottom right, #0c0075, #711f8e);
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      border-bottom: #9734bb;
+      
+  }
+  
+  .dp-menu li{
+    border-bottom: #9734bb;
+  }
+  .dp-menu ul li:hover ul li{
+      margin-bottom: 20px;
+  }
+
+  /*LINKS*/
+a:link {
+    color:whitesmoke;
+  }
+  
+  a{
+    color:var(--amarelo);
+  }
+  a:hover {
+    /*color: #c53f5c;*/
+    color: var(--amarelo) /*rgb(180, 180, 180)*/;
+  }
+  li>a:hover{
+    color:var(--amarelo);
+  }
+  
+  a:visited {
+      /*color: #991632;*/
+      color:whitesmoke;
+    }
+  
+    a:active {
+      color: var(--rosa);
+    } 
+  
+   
+    
+    
+  
+    a:link {
+      color:whitesmoke;
+    }
+    a:link{
+      text-decoration: none;
+    }
+    
+    a:visited {
+      text-decoration: none;
+    }
+  
+    .dp-menu ul li a{
+      color: white;
+    }
+  
+    .dp-menu ul li a:hover {
+      color: var(--amarelo);
+    }
+  
+.material-symbols-rounded{
+  color:whitesmoke;
+}
+
+.material-symbols-rounded:hover{
+  color:var(--amarelo);
+}
+
