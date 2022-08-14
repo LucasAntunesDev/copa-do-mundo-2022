@@ -73,10 +73,36 @@ table{
   padding-left: 20px;
   text-align: center;
   justify-content: center;
-  align-items: center;
+  align-items:center;
+  vertical-align: auto;
   color: var(--offWhite);
 }
 
+.btn-roxo, .btn-rosa, .btn-verde{
+  width: 250px;
+  color: var(--offWhite);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  padding-top: 10px;
+  justify-content: center;
+  font-size: large;
+  text-shadow: 2px 2px 2px #00000017;
+}
+
+.btn-rosa{
+  background-image: linear-gradient(to top right, var(--rosa), #7e002a);
+}
+
+.btn-verde{
+  background-image: linear-gradient(to top right, var(--verdeForte2), var(--verdeForte), var(--verde));
+}
+
+.btn-roxo{
+  background-image: linear-gradient(to top right, var(--roxoClaro),var(--roxo), var(--roxo2));
+}
 
 .partidas{
     
@@ -211,13 +237,6 @@ a:visited {
     text-decoration: none;
   }
 
-  .dp-menu ul li a{
-    color: var(--offWhite);
-  }
-
-  .dp-menu ul li a:hover {
-    color: var(--amarelo);
-  }
 
   .bd-navbar {
     background-color: var(--roxo);
@@ -337,6 +356,10 @@ a:visited {
   scale: 1.02;
 }
 
+/* .hover{
+  box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+} */
+
 /* #carouselExampleFade:hover{
   scale: 1.02;
 } */
@@ -409,4 +432,48 @@ a:visited {
 
 .lightBG tbody tr {
   border-bottom: 1px solid var(--rosa);
+}
+
+.lightBG .material-symbols-outlined{
+  color: var(--qatar);
+
+}
+
+#prev, #next{
+  text-shadow:2px 5px 2px #000000;
+}
+
+.material-symbols-outlined{
+  color: white;
+
+}
+
+.material-symbols-outlined:hover{
+  color: var(--amarelo);
+  scale: 1.1;
+
+}
+
+.material-symbols-outlined:active{
+  color: var(--rosa);
+  scale: 1.1;
+  
+}
+
+.material-symbols-outlined:active, .material-symbols-outlined:hover, .material-symbols-outlined, .lightBG .material-symbols-outlined{
+  text-shadow:2px 2px 2px #000000;
+}
+
+.hover{
+  filter: drop-shadow(3px 3px 15px rgba(0, 0, 0, 0.24));
+}
+
+.infos{
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to top right, var(--roxoClaro),var(--roxo), var(--roxo2));
+  /* width: 300px; */
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--offWhite);
 }

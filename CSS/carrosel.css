@@ -1,0 +1,43 @@
+#carouselExampleFade{
+    width: 540px !important;
+    height: 335px !important;
+    margin: 0px;
+  }
+  
+.estadios{
+    border-radius: 10px !important;
+    border-bottom-right-radius: 20px !important;
+    border-top-right-radius: 10px !important;
+    height:500px;
+    width:750px;
+}
+
+.estadios2{
+  border-radius: 10px !important;
+  border-bottom-right-radius: 20px !important;
+  border-top-right-radius: 10px !important;
+  /* height:500px; */
+  min-width:80% !important;
+  max-width:50% !important;
+  height: 700px;
+}
+
+  /* #carouselExampleControls{
+    width: 740px !important;
+
+    margin: 0px;
+  } */
+  
+  img>.carousel-item{
+    width: 740px !important;
+  }
+
+.carousel-control-prev{
+    display: flex;
+    flex: 0;
+}
+
+.carousel-caption{
+  text-shadow:2px 2px 2px #000000;
+}
+

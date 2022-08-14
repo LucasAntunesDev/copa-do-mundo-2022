@@ -1,5 +1,5 @@
 // Data a ser contada
-var countDownDate = new Date("Nov 21, 2022 07:00:00").getTime();
+var countDownDate = new Date("Nov 20, 2022 15:00:00").getTime();
 
 // Atualiza o contador a cada 1 segundo
 var x = setInterval(function() {
@@ -39,11 +39,35 @@ function mudarFundo(){
   //const fundo = document.getElementById('corpo')
   
   const td = document.getElementsByClassName('tabela')
-  // const img = document.getElementsByClassName('hover')
+  const img = document.getElementsByClassName('hover')
   const body = document.body;
-
+  const icon = document.getElementsByClassName('material-symbols-rounded')
+  
   body.classList.toggle("lightBG");
   tabela.classList.toggle("tabelaDark");
-  // tabela.classList.toggle("img");
+  icon.classList.toggle('lightBG');
+  img.classList.toggle('lightBG')
   
+  const fundo = document.getElementById('carouselExampleFade2')
+  const back = document.getElementById('carouselExampleFade')
+  fundo.style.display = "none"
+  if(fundo === none){
+    fundo.style.display = "block"
+    back.style.display = "none"
+  }
+  else{
+    fundo.style.display = "none"
+    back.style.display = "block"
+  }
+}
+
+function Img(){
+  var A = document.getElementById('A').src = 'Imgs/Grupos Light/Grupo A.png'
+  var B = document.getElementById('B').src = 'Imgs/Grupos Light/Grupo B.png'
+  var C = document.getElementById('C').src = 'Imgs/Grupos Light/Grupo C.png'
+  var D = document.getElementById('D').src = 'Imgs/Grupos Light/Grupo D.png'
+  var E = document.getElementById('E').src = 'Imgs/Grupos Light/Grupo E.png'
+  var F = document.getElementById('F').src = 'Imgs/Grupos Light/Grupo F.png'
+  var G = document.getElementById('G').src = 'Imgs/Grupos Light/Grupo G.png'
+  var H = document.getElementById('H').src = 'Imgs/Grupos Light/Grupo H.png'
 }

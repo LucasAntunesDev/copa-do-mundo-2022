@@ -3,7 +3,7 @@
   --amarelo: #e4ad04;
   --roxo: #711f8e;
   --roxo2: #2b0848;
-  --roxoClaro: #9734bb;
+  --roxoClaro: hsl(284, 56%, 47%);
   --verde: #00b2a1;
   --verdeForte: #009879;
   --verdeForte2: #0c8f82;
@@ -20,27 +20,29 @@
 }
 
 .material-symbols-rounded{
-    font-size: 5.5vh ;
+    font-size: 6.5vh ;
     margin-top: 2px;
 }
 
 #logo-head{
-    display: flex;
-    flex-direction: row ;
-    justify-content: start;
-    margin-left: 2px;
-    max-height: 8vh;
-    height: 6.5vh;
-  
+  display: flex;
+  flex-direction: row ;
+  justify-content: start;
+  margin-left: 2px;
+  max-height: 8vh;
+  height: 6.5vh;
 }
 
 #logo-head:hover{
-    opacity: 0.6;
-    scale: 1.1;
-  }
+  transform: rotate(1.1deg);
+}
+
+#logo-head:hover{
+  /* opacity: 0.6; */
+  scale: 1.1;
+}
 
 .containerR{
-    /* border: solid 2px red; */
     display: flex;
     display: flex;
     flex-direction: row;
@@ -71,6 +73,7 @@
     flex-direction: row;
     justify-content: start;
     align-items: center;
+    flex: 1;
 }
 
 /* .head-bottom{
@@ -103,6 +106,7 @@
     display: flex;
     flex-direction: row;
     align-items: end;
+    margin-left: 46px;
 }
 
 #ir{
@@ -112,11 +116,14 @@
     margin-right: 2.5vh;
 }
 
-#btn-head{
-    margin-right: 20px ;
+#fundo{
+  margin-left: 50px;
 }
-
 /* DP MENU */
+
+#btn-head{
+  margin: 20px;
+}
 .dropdown-menu{
     display: none;
   }
@@ -130,75 +137,78 @@
    }
   
   
-  .dp-menu ul{
-      list-style-type: none;
-      padding: 10px;
-      text-align: left;
-     margin: auto;
-     padding-left: 50px;
-  }
+.dp-menu ul{
+    list-style-type: none;
+    padding: 10px;
+    text-align: left;
+    margin: auto;
+    /* padding-left: 50px; */
+}
 
-  
-  .dp-menu ul li {
-      display: inline-block;
-      font-size: 3vh;
-  }
-  
-  .dp-menu ul li a{
-      color: var(--amarelo);
-      text-decoration: none;
-      padding: 15px;
-  }
-  
-  .dp-menu ul li a:hover{
-      color: #a88008;
-  }
-  
-  .dp-menu{
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .dp-menu ul ul{
-      display: none;
-  margin-left: 0px;
-  
-  }
-  
-  #pag1{
-    margin-left: 120px;
-    margin-right: 35px;
-    align-items: center;
-    min-width: 20px;
-  }
-  
-  #pag2{
-    margin-left: 35px;
-  }
-  
-  .dp-menu ul li:hover ul{
-      display:grid;
-      position: absolute;
-      padding: 2px 10px;
-      font-size: 20px;
-      background-color: #711f8e;
-      /* background-image: linear-gradient(to bottom right, #2b0848, #711f8e); */
-      background-image: linear-gradient(to bottom right, #0c0075, #711f8e);
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-      border-bottom: #9734bb;
-      
-  }
-  
-  .dp-menu li{
+
+.dp-menu ul li {
+  display: inline-block;
+  font-size: 3vh;
+}
+
+
+/* .dp-menu li{
+  padding: 0px 10px 0px 10px;
+}  */
+
+.dp-menu-hover:nth-child(1){
+  margin-left: 20px;
+}
+
+.dp-menu ul li a:hover{
+    color: #a88008;
+}
+
+.dp-menu{
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.dp-menu ul ul{
+    display: none;
+margin-left: 0px;
+
+}
+
+#pag1{
+  margin-left: 120px;
+  margin-right: 35px;
+  align-items: center;
+  min-width: 20px;
+}
+
+#pag2{
+  margin-left: 35px;
+}
+
+.dp-menu ul li:hover ul{
+    display:grid;
+    position: absolute;
+    padding: 2px 10px;
+    font-size: 20px;
+    background-color: #711f8e;
+    /* background-image: linear-gradient(to bottom right, #2b0848, #711f8e); */
+    background-image: linear-gradient(to bottom right, #0c0075, #711f8e);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     border-bottom: #9734bb;
-  }
-  .dp-menu ul li:hover ul li{
-      margin-bottom: 20px;
-  }
+    
+}
+
+.dp-menu li{
+  border-bottom: #9734bb;
+}
+.dp-menu ul li:hover ul li{
+    margin-bottom: 20px;
+}
 
   /*LINKS*/
 a:link {
@@ -212,41 +222,45 @@ a:link {
     /*color: #c53f5c;*/
     color: var(--amarelo) /*rgb(180, 180, 180)*/;
   }
-  li>a:hover{
-    color:var(--amarelo);
+li>a:hover{
+  color:var(--amarelo);
+}
+
+li>a:active{
+  color:var(--rosa);
+}
+  
+a:visited {
+    /*color: #991632;*/
+    color:whitesmoke;
+  }
+
+  a:active {
+    color: 
+    var(--rosa);
+  } 
+  a:link {
+    color:whitesmoke;
+  }
+  a:link{
+    text-decoration: none;
   }
   
   a:visited {
-      /*color: #991632;*/
-      color:whitesmoke;
-    }
-  
-    a:active {
-      color: var(--rosa);
-    } 
-  
-   
-    
-    
-  
-    a:link {
-      color:whitesmoke;
-    }
-    a:link{
-      text-decoration: none;
-    }
-    
-    a:visited {
-      text-decoration: none;
-    }
-  
-    .dp-menu ul li a{
-      color: white;
-    }
-  
-    .dp-menu ul li a:hover {
-      color: var(--amarelo);
-    }
+    text-decoration: none;
+  }
+
+  .dp-menu ul li a{
+    color: white;
+  }
+
+.dp-menu ul li a:hover {
+    color: var(--amarelo);
+  }
+
+.dp-menu ul li a:active{
+    color: var(--rosa);
+  }
   
 .material-symbols-rounded{
   color:whitesmoke;
@@ -256,3 +270,59 @@ a:link {
   color:var(--amarelo);
 }
 
+.bi-brightness-high{
+  color: whitesmoke;
+  height: 20px;
+}
+
+.bi-brightness-high:hover{
+  color:var(--amarelo);
+  scale: 1.1;
+}
+/*  */
+#ir>a:hover{
+  color: var(--amarelo);
+  scale: 1.1;
+}
+
+#ir>a:active{
+  color: var(--rosa);
+  scale: 1.1;
+}
+
+#voltar>a:hover{
+  color: var(--amarelo);
+  scale: 1.1;
+}
+
+#voltar>a:active{
+  color: var(--rosa);
+  scale: 1.1;
+}
+
+.material-symbols-rounded:hover{
+  scale: 1.1;
+}
+
+#btn-head:hover{
+  scale: 1.1;
+}
+
+.dp-menu-hover:hover{
+  scale: 1.2;
+}
+
+.material-symbols-rounded:active {
+  color: var(--rosa);
+} 
+
+.teste{
+  margin-left: 0px;
+  padding-left: 0px;
+  width:20px;
+
+}
+
+/* div{
+  border: solid 2px red;
+} */
