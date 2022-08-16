@@ -42,11 +42,14 @@ function mudarFundo(){
   const img = document.getElementsByClassName('hover')
   const body = document.body;
   const icon = document.getElementsByClassName('material-symbols-rounded')
-  
+  const icon2 = document.getElementsByClassName('carousel-control-prev-icon')
+  const infoEstadio = document.getElementsByClassName('infos')
   body.classList.toggle("lightBG");
   tabela.classList.toggle("tabelaDark");
   icon.classList.toggle('lightBG');
+  icon2.classList.toggle('lightBG');
   img.classList.toggle('lightBG')
+  infoEstadio.classList.toggle('infosLight')
   
   const fundo = document.getElementById('carouselExampleFade2')
   const back = document.getElementById('carouselExampleFade')

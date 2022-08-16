@@ -326,3 +326,11 @@ a:visited {
 /* div{
   border: solid 2px red;
 } */
+
+.material-symbols-outlined:hover{
+  color: var(--rosa);
+}
+
+.material-symbols-outlined:active{
+  color: var(--verde);
+}
