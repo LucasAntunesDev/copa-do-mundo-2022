@@ -11,7 +11,7 @@
 
 :root{
   --rosa: #ff0057;
-  --amarelo: #e4ad04;
+  --amarelo: #ffbf00;
   --roxo: #711f8e;
   --roxo2: #2b0848;
   --verde: #00b2a1;
@@ -37,6 +37,7 @@ body{
     padding: 0;
     margin: 0;
     color: var(--offWhite) !important;
+    transition: all .5s linear;
 }
 
 table{
@@ -44,6 +45,7 @@ table{
   margin: 0px 50vh;
   width: 50px;
   color: var(--offWhite);
+  transition: all .5s linear;
 
 }
 
@@ -167,16 +169,6 @@ h1{
     margin-top: 15px;
 }
 
-hr{
-    border: solid 4px ;
-}
-
-
-hr { border:0; height: 10px;
-    background-image: radial-gradient(
-        var(--verde), var(--verdeForte2) 40%, transparent 60%);
-}
-
 .container{
     
     align-items: center;
@@ -215,6 +207,7 @@ a{
 
 li>a:hover{
   color:var(--amarelo);
+  transition: all .4s linear;
 }
 
 a:visited {
@@ -224,10 +217,12 @@ a:visited {
 
   a:active {
     color: var(--rosa);
+    transition: all .4s linear;
   } 
 
   a:hover {
-    color: var(--amarelo) 
+    color: var(--amarelo);
+    transition: all .4s linear;
   }
   
   
@@ -280,14 +275,17 @@ a:visited {
 
 .bi-chevron-right:hover{
   color: var(--amarelo);
+  transition: all .4s linear;
 }
 
 .bi-chevron-left:hover{
   color: var(--amarelo);
+  transition: all .4s linear;
 }
 
 .bi-chevron-left:hover{
   color: rgb(180, 180, 180);
+  transition: all .4s linear;
 }
 
 #demo{
@@ -339,12 +337,14 @@ a:visited {
   background-image: url(../Imgs/BackgroundLight.svg);
   background-color: var(--offWhite);
   color: var(--qatar) !important;
+  transition: all 0.5s linear;
 }
 
 .darkBG{
   background-image: url(../Imgs/BackgroundDark.svg);
   background-color: var(--black);
   color: var(--offWhite) !important;
+  transition: all 0.5s linear;
 }
 
 #verus{
@@ -357,18 +357,16 @@ a:visited {
   margin-bottom: 0px;
 }
 
-.hover:hover{
-  opacity: 0.7;
-  scale: 1.02;
+.hover{
+  filter: grayscale(110%);
 }
 
-/* .hover{
-  box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-} */
-
-/* #carouselExampleFade:hover{
+.hover:hover{
+  /* opacity: 0.7; */
   scale: 1.02;
-} */
+  transition: all .4s linear;
+  filter: grayscale(0%);
+}
 
 /* //TABELAS// */
 .tabela {
@@ -379,6 +377,7 @@ a:visited {
   border-radius: 5px 5px 0 0;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  transition: all .5s linear;
 }
 
 .tabela thead tr {
@@ -386,6 +385,7 @@ a:visited {
   color: var(--offWhite);
   text-align: left;
   font-weight: bold;
+  transition: all .5s linear;
 }
 
 .tabela th,
@@ -396,11 +396,13 @@ a:visited {
 
 .tabela tbody tr {
   border-bottom: 1px solid var(--qatar);
+  transition: all .5s linear;
 }
 
 .tabela tbody{
   background-color: var(--offWhite) /* #212529*/;
-  color: var(--qatar)
+  color: var(--qatar);
+  transition: all .5s linear;
 }
 /* .tabela tbody tr:nth-of-type(even) {
   background-color: #212529;
@@ -412,51 +414,64 @@ a:visited {
 
 .tabela tbody tr:last-of-type {
   border-bottom: 2px solid var(--rosa);
+  transition: all .5s linear;
 }
 
 .tabela tbody tr.active-row {
   font-weight: bold;
   color: var(--rosa);
+  transition: all .5s linear;
 }
 
 .countdown_diamondSVGIcon__1dyM8{
-  margin: 10px 3px 0px 3px;
+  /* margin: 10px 3px 0px 3px; */
+  margin-top: 10px;
+  margin-left: 15px;
+
 }
 
 .lightBG td{
   background-color: var(--qatarEscuro);
   color: var(--offWhite);
+  transition: all 0.5s linear;
 }
 
 .lightBG th{
   background-color: var(--rosa) ;
   color: var(--offWhite);
+  transition: all 0.5s linear;
 }
 
 .lightBG tbody tr:last-of-type {
   border-bottom: 2px solid var(--qatarClaro);
+  transition: all 0.5s linear;
 }
 
 .lightBG tbody tr {
   border-bottom: 1px solid var(--rosa);
+  transition: all 0.5s linear;
 }
 
 .lightBG .material-symbols-outlined{
   color: var(--qatar);
+  transition: all 0.5s linear;
 }
 
 .lightBG .carousel-control-next{
   color: var(--qatar);
+  transition: all 0.5s linear;
 }
 
 .lightBG .carousel-control-prev{
   color: var(--qatar);
+  transition: all 0.5s linear;
 }
 
 .lightBG .card-body{
   background-color: var(--qatar);
   color: var(--offWhite);
   text-align: center;
+  transition: all 0.5s linear;
 }
 
 .lightBG .card{
@@ -464,6 +479,7 @@ a:visited {
   text-align: center !important;
   justify-content: center;
   width: 500px !important;
+  transition: all 0.5s linear;
 }
 
 #prev, #next{
@@ -478,21 +494,25 @@ a:visited {
 .material-symbols-outlined:hover{
   color: var(--amarelo);
   scale: 1.1;
+  transition: all .4s linear;
 
 }
 
 .material-symbols-outlined:active{
   color: var(--rosa);
   scale: 1.1;
+  transition: all .4s linear;
   
 }
 
 .material-symbols-outlined:active, .material-symbols-outlined:hover, .material-symbols-outlined, .lightBG .material-symbols-outlined{
   text-shadow:2px 2px 2px #000000;
+  transition: all .4s linear;
 }
 
 .hover{
   filter: drop-shadow(3px 3px 15px rgba(0, 0, 0, 0.24));
+  transition: all .4s linear;
 }
 
 .infos{
@@ -503,12 +523,14 @@ a:visited {
   /* border-radius: 10px;
   padding: 10px; */
   color: var(--offWhite);
+  transition: all .5s linear;
 }
 
 .infosLight{
   display: flex;
   flex-direction: column;
   color: var(--qatar);
+  transition: all 0.5s linear;
 }
 
 .countdown_SVGGroupBallIcon__2qE31{
@@ -538,3 +560,22 @@ a:visited {
 .card img{
   width: 18rem;
 } */
+
+h6>.cont{
+  margin-top: 0px;
+}
+
+#days, h6{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contD{
+  filter: grayscale(100%);
+}
+
+.hover{
+  filter: grayscale(35%);
+}

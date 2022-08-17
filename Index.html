@@ -24,9 +24,8 @@
                     </a>
                     <nav class="dp-menu">
                         <ul class="dp-menu-hover">
-                                <li>
+                                <li style="border-bottom: none;">
                                     <a href="#" id="btn-head">Grupos</a>
-                                    
                                     <ul>
                                         <li><a href="html/Grupo A.html">Grupo A</a></li>
                                         <li><a href="html/Grupo B.html">Grupo B</a></li>
@@ -46,7 +45,7 @@
                     <nav>
                         <nav class="dp-menu">
                             <ul id="estadio" class="dp-menu-hover">
-                                <li>
+                                <li style="border-bottom: none;">
                                     <a href="#" id="btn-head">Estádios</a>
                                         <ul>
                                           <li><a href="html/Estádios/974.html">974</a></li>
@@ -54,7 +53,7 @@
                                           <li><a href="html/Estádios/alBayt.html">Al Bayt</a></li>
                                           <li><a href="html/Estádios/alJanoub.html">Al Janoub</a></li>
                                           <li><a href="html/Estádios/alThumama.html">Al Thumama</a></li>
-                                          <li><a href="html/Estádios/Educacao.html">Cidade da Educação</a></li>
+                                          <li><a href="html/Estádios/Educacao.html">Educação</a></li>
                                           <li><a href="html/Estádios/Khalifa.html">Khalifa</a></li>
                                           <li><a href="html/Estádios/Lusail.html">Lusail</a></li
                                         </ul>
@@ -67,7 +66,7 @@
             </div>
                 <div id="darkMode">
                     <button id="botao" onClick="mudarFundo()" type="button">
-                        <span class="material-symbols-rounded" height="20px" >settings_brightness</span>
+                        <span id="icn" class="material-symbols-rounded" height="10px !important">light_mode</span>
                     </button>
                 </div>
             </div>
@@ -78,6 +77,7 @@
 </head>
 <body>
    <div id="cont">
+      <!-- <svg style="transform: rotatey(180deg);" class="animated-mosaic-tile animated-mosaic-tile--20" width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M6.07 32.51A12.53 12.53 0 013.44 30c.76-.97 1.62-1.8 2.63-2.52 1.01.72 1.87 1.55 2.63 2.52-.76.96-1.62 1.8-2.63 2.51zM0 49.26h14.31V10.73H0v38.53zM42.31 3.95L52.23.68v1.87L54.78 0H0v6.57h18.47v11.98c2.17.45 4.23 1.51 5.9 3.19 4.55 4.56 4.55 11.95 0 16.51a11.607 11.607 0 01-5.9 3.19v11.98H0V60h52.23v-.69l-9.92-3.26 9.92-3.26-9.92-3.26 9.92-3.25-9.92-3.26 9.92-3.25-9.92-3.26 9.92-3.26L42.31 30l9.92-3.26-9.92-3.25 9.92-3.27-9.92-3.25 9.92-3.26-9.92-3.25 9.92-3.26-9.92-3.25zm9.92 28.88L60 25.05v-2.79l-7.77 7.78v2.79zm0 15.15L60 40.19v-2.8l-7.77 7.79v2.8zm0-5.05L60 35.15v-2.81l-7.77 7.79v2.8zm0-5.05L60 30.1v-2.8l-7.77 7.79v2.79zm0-28.03v2.8L60 4.86v-2.8l-7.77 7.79zm0 17.93L60 20v-2.79l-7.77 7.78v2.79zm0-10.08L60 9.9V7.11l-7.77 7.78v2.81zm0 5.04L60 14.95v-2.79l-7.77 7.78v2.8zm0 35.33L60 50.28v-2.79l-7.77 7.78v2.8zm0-50.47L59.81 0h-2.79l-4.79 4.8v2.8zm0 45.43l7.77-7.8v-2.79l-7.77 7.78v2.81zM60 60v-2.42L57.59 60H60zm-4.65-.01L60 55.33v-2.8l-7.45 7.46h2.8zM21.12 34.94c-.77.77-1.68 1.32-2.65 1.66V23.39c.97.34 1.88.89 2.65 1.66a6.977 6.977 0 010 9.89z" id="Fill-74" fill="#ff0057"></path></g></svg> -->
       <svg width="96" height="29" viewBox="0 0 96 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="ff-mx-8 countdown_SVGGroupBallIcon__2qE31"><path fill="#ff0057" d="M29.5654 12.1734L32.7897 15.431L36.0139 12.1734L32.7897 8.92823L29.5654 12.1734ZM14.9761 12.1734L17.805 15.0331L20.6463 12.1734L17.805 9.32611L14.9761 12.1734ZM0.386719 12.1734L2.8574 14.6601L5.32808 12.1734L2.8574 9.68666L0.386719 12.1734ZM58.7318 12.1734L62.7467 16.2268L66.7739 12.1734L62.7467 8.13245L58.7318 12.1734ZM44.1424 12.1734L47.7867 15.8289L51.4062 12.1734L47.7867 8.53034L44.1424 12.1734ZM95.4091 11.4771C95.2679 9.09816 94.429 6.81476 92.9984 4.91574C91.5678 3.01672 89.6097 1.58739 87.372 0.808542C85.1342 0.0296895 82.7172 -0.0636941 80.4266 0.540198C78.1361 1.14409 76.075 2.41812 74.5039 4.20117C72.9329 5.98421 71.9225 8.1962 71.6006 10.5573C71.2787 12.9183 71.6597 15.3224 72.6955 17.4655C73.7312 19.6086 75.3752 21.3944 77.4194 22.597C79.4636 23.7996 81.8163 24.365 84.1798 24.2216C87.3477 24.0295 90.3102 22.5791 92.4159 20.1893C94.5216 17.7994 95.5982 14.6657 95.4091 11.4771ZM86.0823 3.818C87.9979 4.43825 89.6342 5.71969 90.7024 7.43617C90.2545 7.74995 89.728 7.93087 89.183 7.95836C88.6755 7.98368 88.1696 7.88362 87.7094 7.66687C87.2492 7.45012 86.8487 7.1233 86.5429 6.71492C86.237 6.30654 86.0352 5.82899 85.9549 5.32402C85.8746 4.81905 85.9183 4.30205 86.0823 3.818ZM76.7184 17.2339C75.6745 15.8726 75.0631 14.2259 74.9642 12.5091C74.9642 12.248 74.9642 11.9994 74.9642 11.7382C75.5812 11.7798 76.1714 12.0076 76.6578 12.3919C77.1442 12.7762 77.5043 13.2991 77.691 13.8924C77.8777 14.4858 77.8825 15.122 77.7045 15.718C77.5266 16.3141 77.1743 16.8424 76.6937 17.2339H76.7184ZM76.3478 7.28697C77.4304 5.59471 79.0705 4.34019 80.9803 3.7434C81.0657 3.99685 81.1197 4.25988 81.1409 4.52665C81.1881 5.34935 80.9089 6.1573 80.3645 6.77282C79.8201 7.38835 79.0552 7.76109 78.2378 7.80916C77.5608 7.87599 76.8813 7.7094 76.3107 7.33668L76.3478 7.28697ZM84.0069 20.5412C82.8082 20.609 81.6087 20.4226 80.4862 19.9942C80.6762 19.3564 81.0655 18.7973 81.5963 18.3999C82.127 18.0024 82.7709 17.7878 83.4325 17.7878C84.094 17.7878 84.7379 18.0024 85.2686 18.3999C85.7994 18.7973 86.1886 19.3564 86.3787 19.9942C85.6096 20.3122 84.7978 20.5134 83.9698 20.591L84.0069 20.5412ZM86.9717 11.5642L85.8846 14.685C85.8284 14.8597 85.7172 15.0111 85.5679 15.1165C85.4186 15.222 85.2392 15.2756 85.0569 15.2694L81.7709 15.1948C81.5897 15.194 81.4136 15.1343 81.2689 15.0245C81.1241 14.9147 81.0186 14.7607 80.9679 14.5855L80.0167 11.415C79.9672 11.239 79.9739 11.0519 80.036 10.88C80.0981 10.7082 80.2124 10.5603 80.3626 10.4575L83.0557 8.5676C83.2038 8.46216 83.3807 8.40558 83.5621 8.40558C83.7436 8.40558 83.9205 8.46216 84.0686 8.5676L86.6752 10.5695C86.8304 10.6876 86.9408 10.8556 86.988 11.0456C87.0351 11.2356 87.0163 11.4361 86.9346 11.6139L86.9717 11.5642ZM90.5418 16.7614C89.993 16.4128 89.5678 15.8985 89.3271 15.292C89.0863 14.6855 89.0423 14.0179 89.2013 13.3847C89.3603 12.7514 89.7141 12.185 90.2123 11.7665C90.7105 11.3479 91.3274 11.0986 91.9748 11.0543C91.9748 11.1787 91.9748 11.3031 92.0366 11.4274C92.1387 13.3439 91.5993 15.2395 90.5048 16.8111L90.5418 16.7614Z"></path></svg>
       <p>A copa começa em:&nbsp;</p>
       <p id="days"></p>
@@ -89,9 +89,11 @@
       <p id="seconds"></p>
       <svg width="96" height="29" viewBox="0 0 96 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="ff-mx-8 countdown_SVGGroupBallIcon__2qE31"><path fill="#ff0057" d="M29.5654 12.1734L32.7897 15.431L36.0139 12.1734L32.7897 8.92823L29.5654 12.1734ZM14.9761 12.1734L17.805 15.0331L20.6463 12.1734L17.805 9.32611L14.9761 12.1734ZM0.386719 12.1734L2.8574 14.6601L5.32808 12.1734L2.8574 9.68666L0.386719 12.1734ZM58.7318 12.1734L62.7467 16.2268L66.7739 12.1734L62.7467 8.13245L58.7318 12.1734ZM44.1424 12.1734L47.7867 15.8289L51.4062 12.1734L47.7867 8.53034L44.1424 12.1734ZM95.4091 11.4771C95.2679 9.09816 94.429 6.81476 92.9984 4.91574C91.5678 3.01672 89.6097 1.58739 87.372 0.808542C85.1342 0.0296895 82.7172 -0.0636941 80.4266 0.540198C78.1361 1.14409 76.075 2.41812 74.5039 4.20117C72.9329 5.98421 71.9225 8.1962 71.6006 10.5573C71.2787 12.9183 71.6597 15.3224 72.6955 17.4655C73.7312 19.6086 75.3752 21.3944 77.4194 22.597C79.4636 23.7996 81.8163 24.365 84.1798 24.2216C87.3477 24.0295 90.3102 22.5791 92.4159 20.1893C94.5216 17.7994 95.5982 14.6657 95.4091 11.4771ZM86.0823 3.818C87.9979 4.43825 89.6342 5.71969 90.7024 7.43617C90.2545 7.74995 89.728 7.93087 89.183 7.95836C88.6755 7.98368 88.1696 7.88362 87.7094 7.66687C87.2492 7.45012 86.8487 7.1233 86.5429 6.71492C86.237 6.30654 86.0352 5.82899 85.9549 5.32402C85.8746 4.81905 85.9183 4.30205 86.0823 3.818ZM76.7184 17.2339C75.6745 15.8726 75.0631 14.2259 74.9642 12.5091C74.9642 12.248 74.9642 11.9994 74.9642 11.7382C75.5812 11.7798 76.1714 12.0076 76.6578 12.3919C77.1442 12.7762 77.5043 13.2991 77.691 13.8924C77.8777 14.4858 77.8825 15.122 77.7045 15.718C77.5266 16.3141 77.1743 16.8424 76.6937 17.2339H76.7184ZM76.3478 7.28697C77.4304 5.59471 79.0705 4.34019 80.9803 3.7434C81.0657 3.99685 81.1197 4.25988 81.1409 4.52665C81.1881 5.34935 80.9089 6.1573 80.3645 6.77282C79.8201 7.38835 79.0552 7.76109 78.2378 7.80916C77.5608 7.87599 76.8813 7.7094 76.3107 7.33668L76.3478 7.28697ZM84.0069 20.5412C82.8082 20.609 81.6087 20.4226 80.4862 19.9942C80.6762 19.3564 81.0655 18.7973 81.5963 18.3999C82.127 18.0024 82.7709 17.7878 83.4325 17.7878C84.094 17.7878 84.7379 18.0024 85.2686 18.3999C85.7994 18.7973 86.1886 19.3564 86.3787 19.9942C85.6096 20.3122 84.7978 20.5134 83.9698 20.591L84.0069 20.5412ZM86.9717 11.5642L85.8846 14.685C85.8284 14.8597 85.7172 15.0111 85.5679 15.1165C85.4186 15.222 85.2392 15.2756 85.0569 15.2694L81.7709 15.1948C81.5897 15.194 81.4136 15.1343 81.2689 15.0245C81.1241 14.9147 81.0186 14.7607 80.9679 14.5855L80.0167 11.415C79.9672 11.239 79.9739 11.0519 80.036 10.88C80.0981 10.7082 80.2124 10.5603 80.3626 10.4575L83.0557 8.5676C83.2038 8.46216 83.3807 8.40558 83.5621 8.40558C83.7436 8.40558 83.9205 8.46216 84.0686 8.5676L86.6752 10.5695C86.8304 10.6876 86.9408 10.8556 86.988 11.0456C87.0351 11.2356 87.0163 11.4361 86.9346 11.6139L86.9717 11.5642ZM90.5418 16.7614C89.993 16.4128 89.5678 15.8985 89.3271 15.292C89.0863 14.6855 89.0423 14.0179 89.2013 13.3847C89.3603 12.7514 89.7141 12.185 90.2123 11.7665C90.7105 11.3479 91.3274 11.0986 91.9748 11.0543C91.9748 11.1787 91.9748 11.3031 92.0366 11.4274C92.1387 13.3439 91.5993 15.2395 90.5048 16.8111L90.5418 16.7614Z"></path></svg>
    </div>
-  
       <img height="20vh" src="Imgs/Separador.png" alt="">
       <br></br>
+
+      <img class="mosaic-gif lozad" data-src="/themes/custom/sc/dist/img/mosaics-gifs/Your-Qatar_cropped-looped.gif" alt="" src="/themes/custom/sc/dist/img/mosaics-gifs/Your-Qatar_cropped-looped.gif" data-loaded="true">
+
 
         <div class="centralizar">
           <img style="margin-right: 20px; transform: rotateY(180deg); " height="80px" src="imgs/Icons SVG/3.svg" alt="">
@@ -178,7 +180,7 @@
               </div>
           <div class="carousel-item active">
             <div class="centralizar">
-              <div class="card" style="width: 18rem;">
+              <div class="card gray" style="width: 18rem;">
                 <a href="html/Estádios/974.html"><img src="https://www.qatar2022.qa/sites/default/files/styles/stadium_desktop/public/stadiums/images/974-stadium-image-en-header-desktop-new.webp?itok=OsYFjNtW" class="card-img-top" alt="..."></a>
                 <div class="card-body">
                   <h1>974, Doha</h1>
@@ -189,7 +191,7 @@
           
           <div class="carousel-item">
             <div class="centralizar">
-              <div class="card" style="width: 18rem;">
+              <div class="card gray" style="width: 18rem;">
                 <a href="html/Estádios/Ahmad.html"><img src="https://www.qatar2022.qa/sites/default/files/styles/stadium_desktop/public/stadiums/images/ahmad-bin-ali-stadium-header-image-en_3.webp?itok=WNiU60vL" class="card-img-top" alt="..."></a>
                 <div class="card-body">
                   <h1>Ahmad Bin Ali, Doha</h1>
@@ -200,7 +202,7 @@
           
           <div class="carousel-item">
             <div class="centralizar">
-              <div class="card" style="width: 18rem;">
+              <div class="card gray" style="width: 18rem;">
                 <a href="html/Estádios/alBayt.html"><img src="https://www.qatar2022.qa/sites/default/files/styles/stadium_desktop/public/stadiums/images/al-bayt-stadium-header-image-en.webp?itok=ofSY_V5j" class="card-img-top" alt="..."></a>
                 <div class="card-body">
                   <h1>Al Bayt, Al Khor</h1>
@@ -211,7 +213,7 @@
 
           <div class="carousel-item">
             <div class="centralizar">
-              <div class="card" style="width: 18rem;">
+              <div class="card gray" style="width: 18rem;">
                 <a href="html/Estádios/alJanoub.html"><img src="https://www.qatar2022.qa/sites/default/files/styles/stadium_desktop/public/stadiums/images/header-image-en_3.webp?itok=wsHxF6gn" class="card-img-top" alt="..."></a>
                 <div class="card-body">
                   <h1>Al Janoub, Al Wakrah</h1>
@@ -222,7 +224,7 @@
           
           <div class="carousel-item">
             <div class="centralizar">
-              <div class="card" style="width: 18rem;">
+              <div class="card gray" style="width: 18rem;">
                 <a href="html/Estádios/alThumama.html"><img src="https://www.qatar2022.qa/sites/default/files/styles/stadium_desktop/public/stadiums/images/Al-Thumama-Stadium-pages-header_7.webp?itok=jksOQ3ml" class="card-img-top" alt="..."></a>
                 <div class="card-body">
                   <h1>Al Thumama, Doha</h1>
@@ -233,7 +235,7 @@
           
           <div class="carousel-item">
             <div class="centralizar">
-              <div class="card" style="width: 18rem;">
+              <div class="card gray" style="width: 18rem;">
                 <a href="html/Estádios/Educacao.html"><img src="https://www.qatar2022.qa/sites/default/files/styles/stadium_desktop/public/stadiums/images/EC-Stadium-EN_4.webp?itok=RLg7mZMw" class="card-img-top" alt="..."></a>
                 <div class="card-body">
                   <h1 id="edu">Cidade da Educação, Doha</h1>
@@ -244,7 +246,7 @@
           
           <div class="carousel-item">
             <div class="centralizar">
-              <div class="card" style="width: 18rem;">
+              <div class="card gray" style="width: 18rem;">
                 <a href="html/Estádios/Khalifa.html"><img src="https://www.qatar2022.qa/sites/default/files/styles/stadium_desktop/public/stadiums/images/Khalifa%20Stadium_14.webp?itok=THheXuxC" class="card-img-top" alt="..."></a>
                 <div class="card-body">
                   <h1>Khalifa, Doha</h1>
@@ -255,7 +257,7 @@
           
           <div class="carousel-item">
             <div class="centralizar">
-              <div class="card" style="width: 18rem;">
+              <div class="card gray" style="width: 18rem;">
                 <a href="html/Estádios/Lusail.html"><img src="https://www.qatar2022.qa/sites/default/files/styles/stadium_desktop/public/stadiums/images/Lusail%20Stadium_7.webp?itok=nsQqHJAZ" class="card-img-top" alt="..."></a>
                 <div class="card-body">
                   <h1>Lusail, Lusail</h1>
