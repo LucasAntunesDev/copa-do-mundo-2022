@@ -9,6 +9,7 @@
     
 }
 
+
 :root{
   --rosa: #ff0057;
   --amarelo: #ffbf00;
@@ -373,12 +374,16 @@ a:visited {
   border-collapse: collapse;
   margin: 25px 0;
   font-size: 0.9em;
-  min-width: 120vh;
+  width: 120vh;
+  /* min-width: 100vh; */
+  /* min-height: 50%; */
+  /* min-height: 75vh; */
   border-radius: 5px 5px 0 0;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   transition: all .5s linear;
 }
+
 
 .tabela thead tr {
   background-color: var(--rosa);
@@ -578,4 +583,48 @@ h6>.cont{
 
 .hover{
   filter: grayscale(35%);
+}
+
+/* Bandeiras */
+.bandeiras{
+  border-radius:100% ;
+  /* background-size:140%;  */
+  size: 100%;
+  background-position:center;
+  /* margin-left: 25px;
+  margin-bottom: 5px; */
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+.centralizar-bandeira{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.centralizar-bandeira-row{
+  justify-content: center;
+  align-items:flex-start;
+  display: flex;
+  flex-direction: row;
+}
+
+.px60{
+  height: 60px; 
+  width: 60px;
+  border: solid 3px #d4ad9b; 
+  /* margin-left: 25px; */
+  border-radius: 100%;
+  margin-bottom: 4px; 
+}
+
+.px30{
+  height: 30px; 
+  width: 30px;
+  border: solid 2px #d4ad9b; 
+  margin-left: 0px;
+  margin-bottom: 0px;
 }

@@ -56,10 +56,10 @@ function mudarFundo(){
   var x = document.getElementById("icn");
   if (x.innerHTML === "light_mode") {
     x.innerHTML = "dark_mode";
-    x.style.transition = 'all 1s linear'
+    // x.style.transition = 'all 1s linear'
   } else {
     x.innerHTML = "light_mode";
-    x.style.transition = 'all 1s linear'
+    // x.style.transition = 'all 1s linear'
   }
   console.log(x)
   // tabela.classList.toggle("tabelaDark");
