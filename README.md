@@ -1,5 +1,5 @@
 ﻿# Copa do Mundo 2022
-Trabalho de Programação Web I. 
+Trabalho da disciplina de Programação Web I (IFRS-BG) 
 
 A proposta inicial do trabalho consistiu em:
 
