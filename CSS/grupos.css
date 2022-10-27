@@ -54,7 +54,7 @@ table {
 }
 
 .table .table-dark {
-  border-radius: 20px !important;
+  border-radius: 20px;
 }
 
 .table-dark:nth-child(even) {
@@ -170,7 +170,16 @@ h1 {
   padding: 0;
 }
 
+.elemento {
+  max-width: 4em;
+  fill: var(--qatar);
+  z-index: -5;
+}
 
+.st0 {
+  background: #640619;
+  background: rgba(100, 6, 25, 1);
+}
 
 .head {
   margin: 10px;
@@ -329,7 +338,8 @@ a:visited {
 
 #contagem-regresssiva {
   justify-content: center;
-  font-size: 40px;
+  font-size: 2em;
+  flex-wrap: wrap;
   margin-top: 20px;
 }
 
@@ -338,8 +348,7 @@ a:visited {
 }
 
 /* Mobile */
-/* @media only screen and (max-width: 950px) {
-}*/
+@media only screen and (max-width: 950px) {}
 
 .lightBG {
   background-image: url(../Imgs/BackgroundLight.svg);
@@ -377,7 +386,7 @@ a:visited {
   border-collapse: collapse;
   margin: 25px 0;
   font-size: 0.9em;
-  width: 50%;
+  max-width: 50%;
   /* min-width: 100vh; */
   /* min-height: 50%; */
   /* min-height: 75vh; */
@@ -497,7 +506,7 @@ a:visited {
   background-color: var(--qatar);
   text-align: center !important;
   justify-content: center;
-  width: 500px ;
+  width: 500px;
   transition: all 0.5s linear;
 }
 
@@ -651,6 +660,7 @@ h6 {
   max-height: 10px;
   height: calc(100%/2);
   cursor: none;
+  max-width: 20em
 }
 
 #copa-comeca {
@@ -660,10 +670,35 @@ h6 {
 @media only screen and (max-width: 600px) {
   .tabela {
     margin: 0px;
-    width: 400px;
+    width: 100px !important;
+    font-weight: bold;
+    background-color: #009879;
   }
 
   #copa-comeca {
+    display: none;
+  }
+
+  .estadios-mobile {
+    display: none;
+  }
+
+  .tabela th,
+  .tabela td {
+    padding: 5px 5px;
+    /* font-size: 0.5em; */
+    height: 5vh;
+  }
+
+  .countdown_diamondSVGIcon__1dyM8 {
+    max-width: 10px;
+  }
+
+  .hover {
+    max-height: 70%;
+  }
+
+  .countdown_SVGGroupBallIcon__2qE31 {
     display: none;
   }
 
@@ -677,6 +712,12 @@ h6 {
     margin: auto;
     display: flex;
     justify-content: center;
+    top: 590;
+    width: auto;
+  }
+
+  #copa-comeca {
+    font-size: small;
   }
 
   .tabela:nth-child(1) td {
@@ -715,3 +756,10 @@ h6 {
 body {
   text-decoration: none;
 }
+
+/* @media only screen and (max-width: 400px){
+  .tabela {
+    width: fit-content;
+    height: 2px;
+  }
+} */

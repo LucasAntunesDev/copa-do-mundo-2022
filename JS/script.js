@@ -27,7 +27,7 @@ var x = setInterval(function () {
 
   $("seconds").innerHTML = segundos + "<h6><br>" + s + "</h6>"
 
-  
+
   if (distancia < 0) {
     clearInterval(x);
     alert("A copa já começou!")
@@ -41,29 +41,59 @@ function mudarFundo() {
   const body = document.body;
   const infoEstadio = document.getElementsByClassName('infos')
   body.classList.toggle("lightBG");
+  const iconeMobile = $("icn-mobile");
+  const icone = $("icn");
+  let x = 1;
 
-  var toggleModes = $("icn");
-  if (toggleModes.innerHTML === "light_mode") {
-    toggleModes.innerHTML = "dark_mode";
-    $('A').src = "Imgs/Grupos 2/Grupo A.png"
-    $('B').src = "Imgs/Grupos 2/Grupo B.png"
-    $('C').src = "Imgs/Grupos 2/Grupo C.png"
-    $('D').src = "Imgs/Grupos 2/Grupo D.png"
-    $('E').src = "Imgs/Grupos 2/Grupo E.png"
-    $('F').src = "Imgs/Grupos 2/Grupo F.png"
-    $('G').src = "Imgs/Grupos 2/Grupo G.png"
-    $('H').src = "Imgs/Grupos 2/Grupo H.png"
-  } else {
-    toggleModes.innerHTML = "light_mode";
-    $('A').src = "Imgs/Grupos/Grupo A.png"
-    $('B').src = "Imgs/Grupos/Grupo B.png"
-    $('C').src = "Imgs/Grupos/Grupo C.png"
-    $('D').src = "Imgs/Grupos/Grupo D.png"
-    $('E').src = "Imgs/Grupos/Grupo E.png"
-    $('F').src = "Imgs/Grupos/Grupo F.png"
-    $('G').src = "Imgs/Grupos/Grupo G.png"
-    $('H').src = "Imgs/Grupos/Grupo H.png"
+  var fundoEscuro = true;
+
+  if(icone.innerHTML === "dark_mode"){
+    fundoEscuro === false;
+    x = 0;
+  }else{
+    fundoEscuro === true;
   }
+
+  console.log(icone.innerHTML)
+  const imgsA = ["Imgs/Grupos/Grupo A.png", "Imgs/Grupos 2/Grupo A.png"];
+  const imgsB = ["Imgs/Grupos/Grupo B.png", "Imgs/Grupos 2/Grupo B.png"];
+  const imgsC = ["Imgs/Grupos/Grupo C.png", "Imgs/Grupos 2/Grupo C.png"];
+  const imgsD = ["Imgs/Grupos/Grupo D.png", "Imgs/Grupos 2/Grupo D.png"];
+  const imgsE = ["Imgs/Grupos/Grupo E.png", "Imgs/Grupos 2/Grupo E.png"];
+  const imgsF = ["Imgs/Grupos/Grupo F.png", "Imgs/Grupos 2/Grupo F.png"];
+  const imgsG = ["Imgs/Grupos/Grupo G.png", "Imgs/Grupos 2/Grupo G.png"];
+  const imgsH = ["Imgs/Grupos/Grupo H.png", "Imgs/Grupos 2/Grupo H.png"];
+  console.log(imgsA[0])
+  console.log(imgsA[1])
+  switch (icone.innerHTML) {
+    case "light_mode":
+    icone.innerHTML = "dark_mode";
+    iconeMobile.innerHTML = "dark_mode";
+    $('A').src = imgsA[x];
+    $('B').src = imgsB[x]
+    $('C').src = imgsC[x]
+    $('D').src = imgsD[x]
+    $('E').src = imgsE[x]
+    $('F').src = imgsF[x]
+    $('G').src = imgsG[x]
+    $('H').src = imgsH[x]
+    fundoEscuro = true;
+    break;
+    case "dark_mode":
+    icone.innerHTML = "light_mode";
+    iconeMobile.innerHTML = "light_mode";
+    $('A').src = imgsA[x];
+    $('B').src = imgsB[x]
+    $('C').src = imgsC[x]
+    $('D').src = imgsD[x]
+    $('E').src = imgsE[x]
+    $('F').src = imgsF[x]
+    $('G').src = imgsG[x]
+    $('H').src = imgsH[x]
+    break;
+    
+}
+
 }
 
 const btnMobile = document.getElementById('btn-mobile');
@@ -81,14 +111,6 @@ function toggleMenu(event) {
     event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
   }
 }
-
-function mostrarGrupos() {
-  
-}
-//function mostrarGrupos(){
- 
-  //gruposUl.style.display = "block"
-//}
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);

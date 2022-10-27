@@ -84,7 +84,7 @@ header{
   /* height: 3.5em; */
   display: flex;
   /* flex-wrap: wrap; */
-  /* flex-grow: calc(100%/3); */
+  flex-grow: calc(100%/3);
   width: 100%;
   height: 9.3vh;
   background-color: #711f8e;
@@ -226,7 +226,7 @@ header{
   font-size: 1em;
   background-color: rgba(107, 0, 179, 0.6);
   background-image: linear-gradient(to top right, rgba(107, 0, 179, 0.26), rgba(44, 1, 73, 0.6));
-  border: 2px solid blanchedalmond;
+  border: 2px solid whitesmoke;
   border-radius: 10px;
   box-shadow: 3px 0px 20px 0px rgb(0 0 0 / 41%);
   width: 22vh;
@@ -417,15 +417,12 @@ a:visited {
     justify-content: center;
   }
 
-  .grupos-mobile{
-    display:inline;
-  }
 
   #menu {
     display: block;
     position: absolute;
-    width: 100%;
-    top: 70px;
+    width: 50%;
+    top: 64px;
     right: 0px;
     background: var(--roxo);
     transition: 0.6s;
@@ -436,7 +433,8 @@ a:visited {
     padding: 0px;
   }
   #nav.active #menu {
-    height: calc(100vh - 70px);
+    /* height: calc(100vh - 70px); */
+    height: 100vh;
     visibility: visible;
     overflow-y: auto;
   }
@@ -445,6 +443,61 @@ a:visited {
     margin: 0 1rem;
     /* border-bottom: 2px solid rgba(0, 0, 0, 0.05); */
   }
+
+
+  #nav-grupos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #menu-grupos {
+    display: block;
+    position: absolute;
+    width: 50%;
+    top: 64px;
+    right: 0px;
+    background: var(--roxo);
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+    padding: 0px;
+  }
+  #nav-grupos.active #menu-grupos {
+    /* height: calc(100vh - 70px); */
+    height: 100vh;
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu-grupos a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    /* border-bottom: 2px solid rgba(0, 0, 0, 0.05); */
+  }
+  
+  #btn-mobile-grupos {
+    display: flex;
+    /* padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem; */
+    color: whitesmoke;
+  }
+/* 
+  .grupos-mobile{
+    display: none;
+  }
+  
+  .grupos-mobile-visible{
+    display: block;
+  } */
+
+
+
   #btn-mobile {
     display: flex;
     padding: 0.5rem 1rem;
@@ -453,12 +506,12 @@ a:visited {
     background: none;
     cursor: pointer;
     gap: 0.5rem;
-    color: blanchedalmond;
+    color: whitesmoke;
   }
   #hamburger {
     border-top: 2px solid;
     width: 20px;
-    color: blanchedalmond;
+    color: whitesmoke;
   }
   #hamburger::after,
   #hamburger::before {
