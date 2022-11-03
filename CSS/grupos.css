@@ -120,9 +120,12 @@ table {
   background-image: linear-gradient(to top right, var(--roxoClaro), var(--roxo), var(--roxo2));
 }
 
-.btn-group, .dropdown-menu, .dropdown-item{
+.btn-group,
+.dropdown-menu,
+.dropdown-item {
   transition: none;
 }
+
 .partidas {
 
   color: var(--offWhite);
@@ -218,9 +221,9 @@ div>tabela {
 }
 
 /* EFEITOS */
-.shadow-xl	{
+.shadow-xl {
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-} 
+}
 
 
 /*LINKS*/
@@ -271,7 +274,8 @@ a:visited {
   background-color: var(--roxo);
   background-image: linear-gradient(to bottom right, var(--roxo2), var(--roxo));
   /*background-image: linear-gradient(#550d1c,#2b070e);*/
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  ;
 }
 
 /*.bi .bi-chevron-right{
@@ -678,13 +682,26 @@ h6 {
   font-size: 1em;
 }
 
-@media only screen and (width<= 600px) {
+@media only screen and (width<=600px) {
   .tabela {
     margin: 0px;
     width: 40% !important;
     font-weight: bold;
     background-color: #009879;
   }
+
+.lightBG {
+  background-image: url(../Imgs/BackgroundLightMobile.svg);
+  background-color: var(--offWhite);
+  color: var(--qatar) !important;
+  transition: all 0.5s linear;
+}
+
+body {
+  background-image: url(../Imgs/BackgroundMobile.svg);
+  background-color: var(--catar);
+  transition: all 0.5s linear;
+}
 
   #copa-comeca {
     display: none;
@@ -705,7 +722,7 @@ h6 {
     max-width: 10px;
   }
 
-  #logo-head{
+  #logo-head {
     max-width: 30px;
   }
 
@@ -778,3 +795,53 @@ body {
     height: 2px;
   }
 } */
+
+/* TIMES BANDEIRAS */
+.brasil {
+  background: url(https://cdn.countryflags.com/thumbs/brazil/flag-round-250.png);
+  /* transform: rotate(-45deg); */
+}
+
+.bg-gradient-to-r-white {
+  background-image: linear-gradient(to right, blanchedalmond, #d7c6ad);
+}
+
+.bg-gradient-to-r-catar {
+  background-image: linear-gradient(to right, #631022, #8f1933);
+}
+
+.cardGrupos1 {
+  background-image: linear-gradient(to right, blanchedalmond, #d7c6ad);
+  padding-left: 1rem;
+  /* 16px */
+  padding-right: 1rem;
+  border-radius: 0.75rem;
+  padding-top: 0.5rem;
+  /* 8px */
+  padding-bottom: 0.5rem;
+  transition: all .4s linear;
+  /* max-height: 70%; */
+}
+
+.cardGrupos1:hover {
+  scale: 1.02;
+  transition: all .4s linear;
+}
+
+.cardGrupos2{
+  background-image: linear-gradient(to right, var(--qatarEscuro), var(--qatar), var(--qatarClaro));
+  padding-left: 1rem;
+  /* 16px */
+  padding-right: 1rem;
+  border-radius: 0.75rem;
+  padding-top: 0.5rem;
+  /* 8px */
+  padding-bottom: 0.5rem;
+  transition: all .4s linear;
+  /* max-height: 70%; */
+}
+
+.cardGrupos2:hover {
+  scale: 1.02;
+  transition: all .4s linear;
+}

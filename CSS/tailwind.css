@@ -22,6 +22,8 @@
     --green800: #166534;
     --green900: #14532D;
 
+    --pink500:#EC4899;
+
     /* Emerald */
     --emerald50:
         #ECFDF5;
@@ -3100,6 +3102,27 @@ html {
     opacity: 1;
 }
 
+/* ALIGN */
+.align-center {
+    align-content: center;
+}
+
+.justify-end {
+    align-content: flex-end;
+}
+
+.justify-start {
+    align-content: flex-start;
+}
+
+.justify-between {
+    align-content: space-between;
+}
+
+.justify-around {
+    align-content: space-around;
+}
+
 /* JUSTIFY */
 .justify-start {
     justify-content: flex-start;
@@ -4805,3 +4828,8 @@ html {
 }
 
 /* 384px */
+
+/* ROTATE */
+.rotate-45{
+    transform: rotate(45deg);
+}

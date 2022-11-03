@@ -64,7 +64,7 @@ header {
   .btn-head {
     display: none;
   }
-   
+
   #irVoltar,
   #ir,
   #voltar {
@@ -94,6 +94,7 @@ header {
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   position: sticky;
   top: 0;
+  backdrop-filter: blur(10px);
   z-index: 1020;
 }
 
@@ -124,6 +125,7 @@ header {
 
 #botao {
   background-color: rgba(180, 180, 180, 0);
+  backdrop-filter: blur(10px);
   border: none;
 }
 
@@ -157,6 +159,7 @@ header {
   display: none;
   margin-right: 10px;
   background: rgba(0, 0, 0, 0.80) !important;
+  backdrop-filter: blur(10px);
 }
 
 .dropdown-menu:hover {
@@ -227,7 +230,7 @@ header {
   flex-direction: column;
   font-size: 1em;
   background: rgba(0, 0, 0, 0.54);
-  background: rgba(0, 0, 0, 0.54);
+  backdrop-filter: blur(10px);
   border: 2px solid var(--rosa);
   border-radius: 10px;
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
@@ -433,6 +436,7 @@ a:visited {
     top: 64px;
     right: 0px;
     background: rgba(0, 0, 0, 0.54);
+    backdrop-filter: blur(10px);
     transition: 0.6s;
     z-index: 1000;
     height: 0px;
@@ -552,47 +556,48 @@ a:visited {
     transition: .1s all;
     text-align: center;
     background: var(--rosa);
-    margin-top:10px;
+    margin-top: 10px;
     padding: 0.5rem;
   }
 
-  #icn-mobile:hover{
+  #icn-mobile:hover {
     color: white !important;
   }
 }
-  button {
-    background: none;
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-  }
 
-  #logo {
-    /* max-width: 100%; */
-    /* width: 7rem;
+button {
+  background: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+#logo {
+  /* max-width: 100%; */
+  /* width: 7rem;
   margin-left:4rem; */
-    fill: whitesmoke;
-    transition: .2s all;
-  }
+  fill: whitesmoke;
+  transition: .2s all;
+}
 
-  #logo:hover {
-    scale: 1.1;
-    transform: translateX(-2px);
-    transform: translateY(-3px);
-    transition: .2s all;
-  }
+#logo:hover {
+  scale: 1.1;
+  transform: translateX(-2px);
+  transform: translateY(-3px);
+  transition: .2s all;
+}
 
-  .botao-mobile {
-    background: #ff0057;
-    padding: 0.5rem;
-    color: whitesmoke;
-  }
+.botao-mobile {
+  background: #ff0057;
+  padding: 0.5rem;
+  color: whitesmoke;
+}
 
 
-  .botao-mobile:hover {
-    scale: 1.1;
-    transition: .1s all;
-  }
+.botao-mobile:hover {
+  scale: 1.1;
+  transition: .1s all;
+}
 
-  .dark .dark\:inline {
-    display: inline;
-  }
+.dark .dark\:inline {
+  display: inline;
+}
