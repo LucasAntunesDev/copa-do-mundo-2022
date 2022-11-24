@@ -1,0 +1,83 @@
+@import url('http://fonts.cdnfonts.com/css/qatar2022-arabic');
+
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+*{
+    transition: color .1s;
+}
+.m-auto {
+    margin: 0 auto;
+}
+
+.font-qatar {
+    font-family: 'Qatar2022 Arabic', sans-serif;
+}
+
+#days,
+h6 {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-gradient-qatar {
+    background-image: linear-gradient(to right, #881337, #5d0e20);
+}
+
+/* .bg-gradient-white {
+    background-image: linear-gradient(to right, #fffbeb, #fff7ed);
+} */
+
+.bg-gradient-rosa {
+    background-image: linear-gradient(to right, #881337, #5d0e20);
+}
+
+div,
+fa-solid {
+    transition: all .0.7s;
+}
+
+#menu {
+    position: relative;
+    display: inline-block;
+    padding: 0.25rem;
+}
+
+#grupos {
+    display: none;
+    position: absolute;
+    /* z-index: 1; */
+}
+
+
+#menu:hover #grupos {
+    display: block;
+  }
+
+#menu:hover a:hover{
+    color: #facc15;
+}
+
+#menu:hover{
+    background-color: #00000023;
+    border-radius: 10px;
+}
+
+/* #nav{
+    top: 0;
+    z-index: 1020 !important;
+    position: sticky;
+} */
+
+td, th{
+    padding: 1rem;
+}
+
+body{
+    background: white !important;
+}
