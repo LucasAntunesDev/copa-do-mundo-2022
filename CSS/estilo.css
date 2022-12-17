@@ -6,9 +6,10 @@
 
 @import "tailwindcss/utilities";
 
-*{
+* {
     transition: color .1s;
 }
+
 .m-auto {
     margin: 0 auto;
 }
@@ -57,13 +58,13 @@ fa-solid {
 
 #menu:hover #grupos {
     display: block;
-  }
+}
 
-#menu:hover a:hover{
+#menu:hover a:hover {
     color: #facc15;
 }
 
-#menu:hover{
+#menu:hover {
     background-color: #00000023;
     border-radius: 10px;
 }
@@ -74,10 +75,34 @@ fa-solid {
     position: sticky;
 } */
 
-td, th{
+td,
+th {
     padding: 1rem;
 }
 
-body{
+body {
     background: white !important;
+}
+
+.grupos-card-fundo {
+    background-image: url(../assets/grupos-fundo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.w-68 {
+    width: 17rem;
+}
+
+.shadow-grupos {
+    filter: drop-shadow(0 10px 8px rgb(131 24 67 / 0.5)) drop-shadow(0 4px 3px rgb(131 24 67 / 0.5));
+}
+
+.shadow-grupos:hover {
+    filter: drop-shadow(0 10px 8px rgb(131 24 67/0.5)) drop-shadow(0 4px 3px rgb(131 24 67 / 0.8));
+}
+
+.border-gold{
+    border: solid 1px #d4af37
 }

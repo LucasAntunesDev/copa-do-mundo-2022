@@ -17,11 +17,10 @@ const vitoria = create('div');
 vitoria.setAttribute('class', 'rounded-full bg-red-600 w-4 h-4');
 
 const tabela = [
-    // {Time: 'Equador', Pontos: '3', Jogos: '1',  Vitórias: '1', Empates: '0', Derrotas: '0',	GP: '2', GC: '0', Saldo de Gols: 2, Aproveitamento: '100%',},
-    { Time: 'Equador', Pontos: '3', Jogos: '1', Vitórias: '1', Empates: '0', Derrotas: '0', GP: '2', GC: '0', Saldo: '2', Aproveitamento: '100%', Últimos: '🟢', Imagem: 'https://cdn.countryflags.com/thumbs/ecuador/flag-round-250.png' },
-    { Time: 'Holanda', Pontos: '3', Jogos: '1', Vitórias: '1', Empates: '0', Derrotas: '0', GP: '2', GC: '0', Saldo: '2', Aproveitamento: '100%', Últimos: '🟢', Imagem: 'https://cdn.countryflags.com/thumbs/netherlands/flag-round-250.png' },
-    { Time: 'Senegal', Pontos: '0', Jogos: '1', Vitórias: '0', Empates: '0', Derrotas: '1', GP: '0', GC: '1', Saldo: '-2', Aproveitamento: '0%', Últimos: '🔴', Imagem: 'https://cdn.countryflags.com/thumbs/senegal/flag-round-250.png' },
-    { Time: 'Catar', Pontos: '0', Jogos: '1', Vitórias: '0', Empates: '0', Derrotas: '1', GP: '0', GC: '2', Saldo: '-2', Aproveitamento: '0%', Últimos: '🔴', Imagem: 'https://cdn.countryflags.com/thumbs/qatar/flag-round-250.png' },
+    { Time: 'Holanda', Pontos: '7', Jogos: '3', Vitórias: '2', Empates: '1', Derrotas: '0', GP: '5', GC: '1', Saldo: '4', Aproveitamento: '77%', Últimos: '🟢⚪🟢', Imagem: 'https://cdn.countryflags.com/thumbs/netherlands/flag-round-250.png' },
+    { Time: 'Senegal', Pontos: '0', Jogos: '3', Vitórias: '2', Empates: '0', Derrotas: '1', GP: '5', GC: '4', Saldo: '1', Aproveitamento: '66%', Últimos: '🔴🟢🟢', Imagem: 'https://cdn.countryflags.com/thumbs/senegal/flag-round-250.png' },
+    { Time: 'Equador', Pontos: '3', Jogos: '3', Vitórias: '1', Empates: '1', Derrotas: '1', GP: '4', GC: '3', Saldo: '1', Aproveitamento: '44%', Últimos: '🟢⚪🔴', Imagem: 'https://cdn.countryflags.com/thumbs/ecuador/flag-round-250.png' },
+    { Time: 'Catar', Pontos: '0', Jogos: '3', Vitórias: '0', Empates: '0', Derrotas: '3', GP: '1', GC: '7', Saldo: '-6', Aproveitamento: '0%', Últimos: '🔴🔴🔴', Imagem: 'https://cdn.countryflags.com/thumbs/qatar/flag-round-250.png' },
 ];
 
 const montarTabela = () => {
@@ -87,11 +86,11 @@ const montarTabela = () => {
 montarTabela();
 
 const jogos = [
-    { dia: '20/11', hora: '13:00', estádio: 'Al Thumama', mandante: 'Catar', visitante: 'Equador' },
-    { dia: '20/11', hora: '13:00', estádio: 'Al Thumama', mandante: '0', visitante: '2' },
+    { dia: '20/11', hora: '13:00', estádio: 'Al Bayt', mandante: 'Catar', visitante: 'Equador' },
+    { dia: '21/11', hora: '13:00', estádio: 'Al Thumama', mandante: '0', visitante: '2' },
 
     { dia: '20/11', hora: '13:00', estádio: 'Al Thumama', mandante: '0', visitante: '2' },
-    { dia: '20/11', hora: '13:00', estádio: 'Al Thumama', mandante: '0', visitante: '2' },
+    { dia: '20/11', hora: '13:00', estádio: 'Internacional Khalifa', mandante: '0', visitante: '2' },
 
     { dia: '20/11', hora: '13:00', estádio: 'Al Thumama', mandante: '0', visitante: '2' },
     { dia: '20/11', hora: '13:00', estádio: 'Al Thumama', mandante: '0', visitante: '2' },
@@ -104,9 +103,6 @@ const montarJogos = () => {
     for (let i = 0; i < tabela.length; i++) {
         // creates a table row
         const tr = create('tr');
-        // const th = create('th');
-        // const thead = $(thead);
-
 
         for (let j = 0; j < 1; j++) {
             const td1 = create('td');
@@ -115,8 +111,7 @@ const montarJogos = () => {
             td2.innerHTML = jogos[i].hora;
             const td3 = create('td');
             td3.innerHTML = jogos[i].estádio;
-        
-            //Adicionando as td's como filhas
+
             tr.appendChild(td1);
             tr.appendChild(td2);
             tr.appendChild(td3);

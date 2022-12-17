@@ -78,6 +78,8 @@ btnIcone.addEventListener('click', () => {
 }
 )
 
+modo.style.display = 'none'
+
 // const btnMobile = document.getElementById('btn-mobile');
 // const gruposUl = document.getElementsByClassName('grupos-mobile');
 
