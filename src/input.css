@@ -1,0 +1,11 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@layer components {
+    .hr{
+        @apply border-white hover:border-yelllow-500 w-44 mb-2 mx-auto;
+    }
+}

@@ -1,0 +1,122 @@
+@import url('http://fonts.cdnfonts.com/css/qatar2022-arabic');
+
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+* {
+    transition: color .1s;
+}
+
+.m-auto {
+    margin: 0 auto;
+}
+
+.font-qatar {
+    font-family: 'Qatar2022 Arabic', sans-serif;
+}
+
+#days,
+h6 {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-gradient-qatar {
+    background-image: linear-gradient(to right, #881337, #5d0e20);
+}
+
+/* .bg-gradient-white {
+    background-image: linear-gradient(to right, #fffbeb, #fff7ed);
+} */
+
+.bg-gradient-rosa {
+    background-image: linear-gradient(to right, #881337, #5d0e20);
+}
+
+div,
+fa-solid {
+    transition: all .0.7s;
+}
+
+#menu {
+    position: relative;
+    display: inline-block;
+    padding: 0.25rem;
+}
+
+#grupos {
+    display: none;
+    position: absolute;
+    /* z-index: 1; */
+}
+
+
+#menu:hover #grupos {
+    display: block;
+}
+
+#menu:hover a:hover {
+    color: #facc15;
+}
+
+#menu:hover {
+    background-color: #00000023;
+    border-radius: 10px;
+}
+
+/* #nav{
+    top: 0;
+    z-index: 1020 !important;
+    position: sticky;
+} */
+
+td,
+th {
+    padding: 1rem;
+}
+
+.grupos-card-fundo {
+    background-image: url(../assets/grupos-fundo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.grupos-card-fundo-dark {
+    background-image: url(../assets/grupos-fundo-dark.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.w-68 {
+    width: 17rem;
+}
+
+.shadow-grupos {
+    filter: drop-shadow(0 10px 8px rgb(131 24 67 / 0.5)) drop-shadow(0 4px 3px rgb(131 24 67 / 0.5));
+}
+
+.shadow-grupos:hover {
+    filter: drop-shadow(0 10px 8px rgb(131 24 67/0.5)) drop-shadow(0 4px 3px rgb(131 24 67 / 0.8));
+}
+
+.border-gold{
+    border: solid 1px #d4af37
+}
+
+#logo-big{
+    background: url(../assets/logo-text.svg);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+.team-img{
+    margin-inline: 1rem;
+    height: 1.5rem;
+}
