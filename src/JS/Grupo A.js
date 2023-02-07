@@ -18,17 +18,15 @@ vitoria.setAttribute('class', 'rounded-full bg-red-600 w-4 h-4');
 
 const tabela = [
     { Time: 'Holanda', Pontos: '7', Jogos: '3', Vitórias: '2', Empates: '1', Derrotas: '0', GP: '5', GC: '1', Saldo: '4', Aproveitamento: '77%', Últimos: '🟢⚪🟢', Imagem: 'https://cdn.countryflags.com/thumbs/netherlands/flag-round-250.png' },
-    { Time: 'Senegal', Pontos: '0', Jogos: '3', Vitórias: '2', Empates: '0', Derrotas: '1', GP: '5', GC: '4', Saldo: '1', Aproveitamento: '66%', Últimos: '🔴🟢🟢', Imagem: 'https://cdn.countryflags.com/thumbs/senegal/flag-round-250.png' },
-    { Time: 'Equador', Pontos: '3', Jogos: '3', Vitórias: '1', Empates: '1', Derrotas: '1', GP: '4', GC: '3', Saldo: '1', Aproveitamento: '44%', Últimos: '🟢⚪🔴', Imagem: 'https://cdn.countryflags.com/thumbs/ecuador/flag-round-250.png' },
+    { Time: 'Senegal', Pontos: '6', Jogos: '3', Vitórias: '2', Empates: '0', Derrotas: '1', GP: '5', GC: '4', Saldo: '1', Aproveitamento: '66%', Últimos: '🔴🟢🟢', Imagem: 'https://cdn.countryflags.com/thumbs/senegal/flag-round-250.png' },
+    { Time: 'Equador', Pontos: '4', Jogos: '3', Vitórias: '1', Empates: '1', Derrotas: '1', GP: '4', GC: '3', Saldo: '1', Aproveitamento: '44%', Últimos: '🟢⚪🔴', Imagem: 'https://cdn.countryflags.com/thumbs/ecuador/flag-round-250.png' },
     { Time: 'Catar', Pontos: '0', Jogos: '3', Vitórias: '0', Empates: '0', Derrotas: '3', GP: '1', GC: '7', Saldo: '-6', Aproveitamento: '0%', Últimos: '🔴🔴🔴', Imagem: 'https://cdn.countryflags.com/thumbs/qatar/flag-round-250.png' },
 ];
 
 const montarTabela = () => {
-    //1 - Recuperar o elemnto HTML
     const tbody = $('corpo');
 
     for (let i = 0; i < tabela.length; i++) {
-        // creates a table row
         const tr = create('tr');
 
         for (let j = 0; j < 1; j++) {
@@ -97,11 +95,9 @@ const jogos = [
 ]
 
 const montarJogos = () => {
-    //1 - Recuperar o elemnto HTML
     const tbody = $('tbody');
 
     for (let i = 0; i < tabela.length; i++) {
-        // creates a table row
         const tr = create('tr');
 
         for (let j = 0; j < 1; j++) {

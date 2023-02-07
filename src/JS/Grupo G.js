@@ -11,7 +11,6 @@ function $$(classe) {
 }
 
 const tabela = [
-    // {Time: 'Brasil', Pontos: '3', Jogos: '1',  Vitórias: '1', Empates: '0', Derrotas: '0',	GP: '2', GC: '0', Saldo de Gols: 2, Aproveitamento: '100%',},
     { Time: 'Brasil', Pontos: '6', Jogos: '3', Vitórias: '2', Empates: '0', Derrotas: '1', GP: '3', GC: '1', Saldo: '2', Aproveitamento: '66%', Últimos: '🟢🟢🔴', Imagem: 'https://cdn.countryflags.com/thumbs/brazil/flag-round-250.png' },
     { Time: 'Suiça', Pontos: '6', Jogos: '3', Vitórias: '2', Empates: '0', Derrotas: '1', GP: '4', GC: '3', Saldo: '1', Aproveitamento: '66%', Últimos: '🟢🔴🟢', Imagem: 'https://cdn.countryflags.com/thumbs/switzerland/flag-round-250.png' },
     { Time: 'Camarões', Pontos: '4', Jogos: '3', Vitórias: '1', Empates: '1', Derrotas: '1', GP: '4', GC: '4', Saldo: '0', Aproveitamento: '44%', Últimos: '🔴⚪🟢', Imagem: 'https://cdn.countryflags.com/thumbs/cameroon/flag-round-250.png' },
@@ -19,11 +18,11 @@ const tabela = [
 ];
 
 const montarTabela = () => {
-    //1 - Recuperar o elemnto HTML
+    
     const tbody = $('corpo');
 
     for (let i = 0; i < tabela.length; i++) {
-        // creates a table row
+        
         const tr = create('tr');
 
         for (let j = 0; j < 1; j++) {
@@ -92,11 +91,11 @@ const jogos = [
 ]
 
 const montarJogos = () => {
-    //1 - Recuperar o elemnto HTML
+    
     const tbody = $('tbody');
 
     for (let i = 0; i < tabela.length; i++) {
-        // creates a table row
+        
         const tr = create('tr');
         // const th = create('th');
         // const thead = $(thead);

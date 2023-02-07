@@ -11,18 +11,18 @@ function $$(classe) {
 }
 
 const tabela = [
-    {Time: 'Portugal', Pontos: '3', Jogos: '3',  Vitórias: '1', Empates: '0', Derrotas: '0',	GP: '2', GC: '0', Saldo: '2', Aproveitamento: '100%', Últimos: 'V', Imagem:'https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png'},
-    {Time: 'Coréia do Sul', Pontos: '3', Jogos: '3',  Vitórias: '1', Empates: '0', Derrotas: '0',	GP: '2', GC: '0', Saldo: '2', Aproveitamento: '100%', Últimos: 'V', Imagem:'https://cdn.countryflags.com/thumbs/south-korea/flag-round-250.png'},
-    {Time: 'Uruguai', Pontos: '0', Jogos: '3',  Vitórias: '0', Empates: '0', Derrotas: '1',	GP: '0', GC: '1', Saldo: '-2', Aproveitamento: '0%', Últimos: 'D', Imagem:'https://cdn.countryflags.com/thumbs/uruguay/flag-round-250.png'},
-    {Time: 'Gana', Pontos: '0', Jogos: '3',  Vitórias: '0', Empates: '0', Derrotas: '1',	GP: '0', GC: '2', Saldo: '-2', Aproveitamento: '0%', Últimos: 'D', Imagem:'https://cdn.countryflags.com/thumbs/ghana/flag-round-250.png'},
+    {Time: 'Portugal', Pontos: '3', Jogos: '3',  Vitórias: '2', Empates: '0', Derrotas: '1',GP: '6', GC: '4', Saldo: '2', Aproveitamento: '66%', Últimos: 'VVD', Imagem:'https://cdn.countryflags.com/thumbs/portugal/flag-round-250.png'},
+    {Time: 'Coréia do Sul', Pontos: '3', Jogos: '3',  Vitórias: '1', Empates: '1', Derrotas: '1',GP: '4', GC: '0', Saldo: '0', Aproveitamento: '44%', Últimos: 'EDV', Imagem:'https://cdn.countryflags.com/thumbs/south-korea/flag-round-250.png'},
+    {Time: 'Uruguai', Pontos: '0', Jogos: '3',  Vitórias: '1', Empates: '1', Derrotas: '1',	GP: '2', GC: '2', Saldo: '0', Aproveitamento: '44%', Últimos: 'EDV', Imagem:'https://cdn.countryflags.com/thumbs/uruguay/flag-round-250.png'},
+    {Time: 'Gana', Pontos: '0', Jogos: '3',  Vitórias: '1', Empates: '0', Derrotas: '2',	GP: '5', GC: '7', Saldo: '-2', Aproveitamento: '33%', Últimos: 'DVD', Imagem:'https://cdn.countryflags.com/thumbs/ghana/flag-round-250.png'},
 ];
 
 const montarTabela = () => {
-    //1 - Recuperar o elemnto HTML
+    
     const tbody = $('corpo');
 
     for (let i = 0; i < tabela.length; i++) {
-        // creates a table row
+        
         const tr = create('tr');
 
         for (let j = 0; j < 1; j++) {

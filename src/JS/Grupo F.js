@@ -11,18 +11,18 @@ function $$(classe) {
 }
 
 const tabela = [
-    {Time: 'Marrocos', Pontos: '3', Jogos: '3',  Vitórias: '1', Empates: '0', Derrotas: '0',	GP: '2', GC: '0', Saldo: '2', Aproveitamento: '100%', Últimos: 'V', Imagem:'https://cdn.countryflags.com/thumbs/morocco/flag-round-250.png'},
-    {Time: 'Croácia', Pontos: '3', Jogos: '3',  Vitórias: '1', Empates: '0', Derrotas: '0',	GP: '2', GC: '0', Saldo: '2', Aproveitamento: '100%', Últimos: 'V', Imagem:'https://cdn.countryflags.com/thumbs/croatia/flag-round-250.png'},
-    {Time: 'Bélgica', Pontos: '0', Jogos: '3',  Vitórias: '0', Empates: '0', Derrotas: '1',	GP: '0', GC: '1', Saldo: '-2', Aproveitamento: '0%', Últimos: 'D', Imagem:'https://cdn.countryflags.com/thumbs/belgium/flag-round-250.png'},
-    {Time: 'Canadá', Pontos: '0', Jogos: '3',  Vitórias: '0', Empates: '0', Derrotas: '1',	GP: '0', GC: '2', Saldo: '-2', Aproveitamento: '0%', Últimos: 'D', Imagem:'https://cdn.countryflags.com/thumbs/canada/flag-round-250.png'},
+    {Time: 'Marrocos', Pontos: '7', Jogos: '3',  Vitórias: '2', Empates: '1', Derrotas: '0',GP: '4', GC: '1', Saldo: '3', Aproveitamento: '77%', Últimos: 'EVV', Imagem:'https://cdn.countryflags.com/thumbs/morocco/flag-round-250.png'},
+    {Time: 'Croácia', Pontos: '5', Jogos: '3',  Vitórias: '1', Empates: '2', Derrotas: '0',	GP: '4', GC: '1', Saldo: '3', Aproveitamento: '55%', Últimos: 'EVE', Imagem:'https://cdn.countryflags.com/thumbs/croatia/flag-round-250.png'},
+    {Time: 'Bélgica', Pontos: '4', Jogos: '3',  Vitórias: '1', Empates: '10', Derrotas: '1',GP: '1', GC: '2', Saldo: '-1', Aproveitamento: '44%', Últimos: 'VDE', Imagem:'https://cdn.countryflags.com/thumbs/belgium/flag-round-250.png'},
+    {Time: 'Canadá', Pontos: '0', Jogos: '3',  Vitórias: '0', Empates: '0', Derrotas: '3',	GP: '2', GC: '7', Saldo: '-5', Aproveitamento: '0%', Últimos: 'DDD', Imagem:'https://cdn.countryflags.com/thumbs/canada/flag-round-250.png'},
 ];
 
 const montarTabela = () => {
-    //1 - Recuperar o elemnto HTML
+    
     const tbody = $('corpo');
 
     for (let i = 0; i < tabela.length; i++) {
-        // creates a table row
+        
         const tr = create('tr');
 
         for (let j = 0; j < 1; j++) {

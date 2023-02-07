@@ -13,16 +13,16 @@ function $$(classe) {
 const tabela = [
     {Time: 'Inglaterra', Pontos: '7', Jogos: '3',  Vitórias: '2', Empates: '1', Derrotas: '0',	GP: '9', GC: '2', Saldo: '7', Aproveitamento: '77%', Últimos: 'VEV', Imagem:'https://cdn.countryflags.com/thumbs/england/flag-round-250.png'},
     {Time: 'Estados Unidos', Pontos: '5', Jogos: '3',  Vitórias: '1', Empates: '2', Derrotas: '0',	GP: '2', GC: '1', Saldo: '1', Aproveitamento: '55%', Últimos: 'EEV', Imagem:'https://cdn.countryflags.com/thumbs/united-states-of-america/flag-round-250.png'},
-    {Time: 'Irã', Pontos: '3', Jogos: '3',  Vitórias: '1', Empates: '0', Derrotas: '1',	GP: '0', GC: '1', Saldo: '-3', Aproveitamento: '33%', Últimos: 'DVD', Imagem:'https://cdn.countryflags.com/thumbs/iran/flag-round-250.png'},
-    {Time: 'País de Gales', Pontos: '1', Jogos: '3',  Vitórias: '0', Empates: '0', Derrotas: '1',	GP: '0', GC: '2', Saldo: '-5', Aproveitamento: '11%', Últimos: 'EDD', Imagem:'https://cdn.countryflags.com/thumbs/wales/flag-round-250.png'},
+    {Time: 'Irã', Pontos: '3', Jogos: '3',  Vitórias: '1', Empates: '0', Derrotas: '2',	GP: '4', GC: '7', Saldo: '-3', Aproveitamento: '33%', Últimos: 'DVD', Imagem:'https://cdn.countryflags.com/thumbs/iran/flag-round-250.png'},
+    {Time: 'País de Gales', Pontos: '1', Jogos: '3',  Vitórias: '0', Empates: '1', Derrotas: '2',	GP: '1', GC: '6', Saldo: '-5', Aproveitamento: '11%', Últimos: 'EDD', Imagem:'https://cdn.countryflags.com/thumbs/wales/flag-round-250.png'},
 ];
 
 const montarTabela = () => {
-    //1 - Recuperar o elemnto HTML
+    
     const tbody = $('corpo');
 
     for (let i = 0; i < tabela.length; i++) {
-        // creates a table row
+        
         const tr = create('tr');
 
         for (let j = 0; j < 1; j++) {
