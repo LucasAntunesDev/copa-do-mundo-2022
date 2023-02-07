@@ -1,4 +1,11 @@
 {
+    "name": "site-copa-do-mundo-2022",
+    "version": "1.0.0",
+    "description": "Site sobre a copa do Mundo de 2022 construído com HTML, TailwindCSS e Javascript",
+    "scripts": {
+      "build": "tailwindcss -i ./src/input.css -o ./scr/output.css -w"
+  
+    },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.18",

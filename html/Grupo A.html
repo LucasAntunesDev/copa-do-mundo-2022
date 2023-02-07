@@ -1,7 +1,7 @@
 <!DOCTYPE html 5>
-<html lang="PT-br">
+<html lang="PT-br" class="bg-white dark:bg-neutral-900">
 
-<head>
+<head id="head">
     <meta charset="UTF-8">
     <meta name="theme-color" content="#640619">
     <meta name="viewport" content="width=device-width, initinal-scale=1.0">
@@ -10,11 +10,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" type="image/x-icon" href="Imgs/Copa Logo 2.svg">
+    <link rel="icon" type="image/x-icon"
+        href="https://upload.wikimedia.org/wikipedia/pt/thumb/e/e3/2022_FIFA_World_Cup.svg/1713px-2022_FIFA_World_Cup.svg.png">
+    </link>
     </link>
     <link rel="stylesheet" href="../src/output.css">
     <link rel="stylesheet" href="../CSS/estilo.css">
+</head>
 
+<body id="body"
+    class=" text-center antialiased text-rose-900  
+dark:text-white font-qatar font-bold h-12">
     <div class="flex flex-col items-center justify-center mt-32" x-cloak x-data="appData()" x-init="appInit()">
         <div class="flex flex-col">
 
@@ -85,7 +91,7 @@
                             <a href="#" class="flex">Grupos</a>
                             <ul id="grupos"
                                 class="w-24 flex bg-gradient-to-r from-indigo-700 via-purple-700 to-purple-800 text-white p-2 rounded-lg gap-4">
-                                <li class="mb-2"><a href="Grupo_A.html">Grupo A</a></li>
+                                <li class="mb-2"><a href="Grupo A.html">Grupo A</a></li>
                                 <li class="mb-2"><a href="Grupo B.html">Grupo B</a></li>
                                 <li class="mb-2"><a href="Grupo C.html">Grupo C</a></li>
                                 <li class="mb-2"><a href="Grupo D.html">Grupo D</a></li>
@@ -110,12 +116,9 @@
                 </div>
             </nav>
         </div>
-</head>
 
-<body id="body"
-    class=" text-center antialiased bg-white text-rose-900 dark:bg-pink-900 dark:text-white font-qatar font-bold h-12">
-
-    <div class="flex flex-row justify-center items-center bg-teal-600 text-white px-4 py-8 rounded-lg shadow-lg h-8 text-3xl mb-8 shadow-teal-700/70 hover:shadow-teal-700 hover:text-yellow-300 cursor-pointer">
+    <div
+        class="flex flex-row justify-center items-center bg-teal-600 text-white px-4 py-8 rounded-lg shadow-lg h-8 text-3xl mb-8 shadow-teal-700/70 hover:shadow-teal-700 hover:text-yellow-300 cursor-pointer">
         <h2>Grupo A</h2>
     </div>
 
@@ -152,12 +155,13 @@
                 <p class="m-auto text-white">Rodada 1</p>
             </div>
 
-            <div class="bg-pink-700 p-4 rounded-lg text-white gap-y-2 gap-x-4 flex flex-row items-center shadow-lg shadow-pink-800/70 hover:shadow-pink-900/80 hover:text-yellow-500">
+            <div
+                class="bg-pink-700 p-4 rounded-lg text-white gap-y-2 gap-x-4 flex flex-row items-center shadow-lg shadow-pink-800/70 hover:shadow-pink-900/80 hover:text-yellow-500">
 
                 <div class="flex flex-col">
 
                     <div class="text-sm mb-4 gap-4">
-                        <td >13:00</td>
+                        <td>13:00</td>
                         <td>20/11/22</td>
                         <td>Al Bayt</td>
                     </div>
@@ -174,8 +178,7 @@
                     <div class="flex flex-row justify-start items-center">
                         <div class="flex flex-row justify-start items-center text-sm gap-4">
                             <img class="w-8 border-white border-2 rounded-full"
-                                src="https://cdn.countryflags.com/thumbs/ecuador/flag-round-250.png" 
-                                >
+                                src="https://cdn.countryflags.com/thumbs/ecuador/flag-round-250.png">
                             <h4 class="font-sm">Equador</h4>
                             <h4 class="mx-start">2</h4>
                         </div>
@@ -184,12 +187,13 @@
 
             </div>
 
-            <div class="bg-pink-700 p-4 rounded-lg text-white gap-y-2 gap-x-4 flex flex-row items-center shadow-lg shadow-pink-800/70 hover:shadow-pink-900/80 hover:text-yellow-500">
+            <div
+                class="bg-pink-700 p-4 rounded-lg text-white gap-y-2 gap-x-4 flex flex-row items-center shadow-lg shadow-pink-800/70 hover:shadow-pink-900/80 hover:text-yellow-500">
 
                 <div class="flex flex-col">
 
                     <div class="text-sm mb-4 gap-4">
-                        <td >13:00</td>
+                        <td>13:00</td>
                         <td>21/11/22</td>
                         <td>Al Thumama</td>
                     </div>
@@ -197,7 +201,7 @@
                     <div class="flex flex-row justify-start items-center">
                         <div class="flex flex-row justify-start items-center text-sm gap-4">
                             <img class="w-8 border-white border-2 rounded-full"
-                                src="https://cdn.countryflags.com/thumbs/senegal/flag-round-250.png" >
+                                src="https://cdn.countryflags.com/thumbs/senegal/flag-round-250.png">
                             <h4 class="font-sm">Senegal</h4>
                             <h4>0</h4>
                         </div>
@@ -214,7 +218,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Rodada 2  -->
         <div class="flex flex-col gap-4">
 
@@ -223,12 +227,13 @@
                 <p class="m-auto text-white">Rodada 2</p>
             </div>
 
-            <div class="bg-pink-700 p-4 rounded-lg text-white gap-y-2 gap-x-4 flex flex-row items-center shadow-lg shadow-pink-800/70 hover:shadow-pink-900/80 hover:text-yellow-500">
+            <div
+                class="bg-pink-700 p-4 rounded-lg text-white gap-y-2 gap-x-4 flex flex-row items-center shadow-lg shadow-pink-800/70 hover:shadow-pink-900/80 hover:text-yellow-500">
 
                 <div class="flex flex-col">
 
                     <div class="text-sm mb-4 gap-4">
-                        <td >10:00</td>
+                        <td>10:00</td>
                         <td>25/11/22</td>
                         <td>Al Thumama</td>
                     </div>
@@ -236,7 +241,7 @@
                     <div class="flex flex-row justify-start items-center">
                         <div class="flex flex-row justify-start items-center text-sm gap-4">
                             <img class="w-8 border-white border-2 rounded-full"
-                                src="https://cdn.countryflags.com/thumbs/qatar/flag-round-250.png" >
+                                src="https://cdn.countryflags.com/thumbs/qatar/flag-round-250.png">
                             <h4 class="font-sm">Catar</h4>
                             <h4>1</h4>
                         </div>
@@ -245,7 +250,7 @@
                     <div class="flex flex-row justify-start items-center">
                         <div class="flex flex-row justify-start items-center text-sm gap-4">
                             <img class="w-8 border-white border-2 rounded-full"
-                                src="https://cdn.countryflags.com/thumbs/senegal/flag-round-250.png" >
+                                src="https://cdn.countryflags.com/thumbs/senegal/flag-round-250.png">
                             <h4 class="font-sm">Senegal</h4>
                             <h4 class="mx-start">3</h4>
                         </div>
@@ -254,12 +259,13 @@
 
             </div>
 
-            <div class="bg-pink-700 p-4 rounded-lg text-white gap-y-2 gap-x-4 flex flex-row items-center shadow-lg shadow-pink-800/70 hover:shadow-pink-900/80 hover:text-yellow-500">
+            <div
+                class="bg-pink-700 p-4 rounded-lg text-white gap-y-2 gap-x-4 flex flex-row items-center shadow-lg shadow-pink-800/70 hover:shadow-pink-900/80 hover:text-yellow-500">
 
                 <div class="flex flex-col">
 
                     <div class="text-sm mb-4 gap-4">
-                        <td >13:00</td>
+                        <td>13:00</td>
                         <td>25/11/22</td>
                         <td>Khalifa International</td>
                     </div>
@@ -293,13 +299,14 @@
                 <p class="m-auto text-white">Rodada 3</p>
             </div>
 
-            <div class="bg-pink-700 p-4 rounded-lg text-white gap-y-2 gap-x-4 flex flex-row items-center shadow-lg shadow-pink-800/70 hover:shadow-pink-900/80 hover:text-yellow-500">
+            <div
+                class="bg-pink-700 p-4 rounded-lg text-white gap-y-2 gap-x-4 flex flex-row items-center shadow-lg shadow-pink-800/70 hover:shadow-pink-900/80 hover:text-yellow-500">
 
                 <div class="flex flex-col">
 
                     <div class="text-sm mb-4 gap-4">
                         <td>29/11/22</td>
-                        <td >11:00</td>
+                        <td>11:00</td>
                         <td>Al Bayt</td>
                     </div>
 
@@ -315,8 +322,7 @@
                     <div class="flex flex-row justify-start items-center">
                         <div class="flex flex-row justify-start items-center text-sm gap-4">
                             <img class="w-8 border-white border-2 rounded-full"
-                                src="https://cdn.countryflags.com/thumbs/qatar/flag-round-250.png" 
->
+                                src="https://cdn.countryflags.com/thumbs/qatar/flag-round-250.png">
                             <h4 class="font-sm">Catar</h4>
                             <h4 class="mx-start">2</h4>
                         </div>
@@ -325,7 +331,8 @@
 
             </div>
 
-            <div class="bg-pink-700 p-4 rounded-lg text-white gap-y-2 gap-x-4 flex flex-row items-center shadow-lg shadow-pink-800/70 hover:shadow-pink-900/80 hover:text-yellow-500">
+            <div
+                class="bg-pink-700 p-4 rounded-lg text-white gap-y-2 gap-x-4 flex flex-row items-center shadow-lg shadow-pink-800/70 hover:shadow-pink-900/80 hover:text-yellow-500">
 
                 <div class="flex flex-col">
 
@@ -338,8 +345,7 @@
                     <div class="flex flex-row justify-start items-center">
                         <div class="flex flex-row justify-start items-center text-sm gap-4">
                             <img class="w-8 border-white border-2 rounded-full"
-                                src="https://cdn.countryflags.com/thumbs/ecuador/flag-round-250.png" 
-                                >
+                                src="https://cdn.countryflags.com/thumbs/ecuador/flag-round-250.png">
                             <h4 class="font-sm">Equador</h4>
                             <h4>1</h4>
                         </div>
@@ -348,8 +354,7 @@
                     <div class="flex flex-row justify-start items-center">
                         <div class="flex flex-row justify-start items-center text-sm gap-4">
                             <img class="w-8 border-white border-2 rounded-full"
-                                src="https://cdn.countryflags.com/thumbs/senegal/flag-round-250.png" alt="Holanda"
-                                >
+                                src="https://cdn.countryflags.com/thumbs/senegal/flag-round-250.png" alt="Holanda">
                             <h4 class="font-sm">Senegal</h4>
                             <h4 class="mx-2">2</h4>
                         </div>
@@ -369,7 +374,7 @@
 
 
 <script src="https://cdn.tailwindcss.com"></script>
-<script src="../src/JS/footer.js"></script>
+<script src="../src/components/footer.js"></script>
 <script src="../src/JS/Grupo A.js"></script>
 
 </html>
