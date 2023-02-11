@@ -5,8 +5,11 @@
 <style type="text/css">
 	.st0{display:none;}
 	.st1{display:inline;fill:#DBDB59;}
+	.st1:hover{fill:#881337;}
 	.st2{display:none;fill:none;stroke:#DBDB59;stroke-width:0.15;stroke-miterlimit:10;}
+	.st2:hover{fill:#881337;}
 	.st3{fill:#831434;}
+	.st3:hover{fill:#881337;}
 </style>
 <g id="Camada_2_1_" class="st0">
 	<rect x="-4.4" y="-7.7" class="st1" width="46" height="49.9"/>
